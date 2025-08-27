@@ -1,0 +1,256 @@
+/* components/Header/Header.module.css */
+.headerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #1a4b8c 0%, #2a5c9a 100%);
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #0f3057;
+  color: white;
+}
+
+.schoolName {
+  display: flex;
+  align-items: center;
+}
+
+.schoolName h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.topBarActions {
+  display: flex;
+  gap: 20px;
+}
+
+.topBarActions a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background-color: white;
+  position: relative;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+}
+
+.navLinks li {
+  position: relative;
+}
+
+.navLinks > li > a {
+  display: block;
+  padding: 20px 15px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.navLinks > li > a:hover {
+  color: #3498db;
+  background-color: #f8f9fa;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  width: 220px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 8px 8px;
+  display: none;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.dropdown li {
+  padding: 0;
+}
+
+.dropdown a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.dropdown a:hover {
+  background-color: #f8f9fa;
+  color: #3498db;
+  border-left: 3px solid #3498db;
+}
+
+.navLinks li:hover .dropdown {
+  display: block;
+}
+
+.navActions {
+  display: flex;
+  gap: 15px;
+}
+
+.navActions a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.applyBtn {
+  background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+  color: white;
+}
+
+.applyBtn:hover {
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  transform: translateY(-2px);
+}
+
+.portalBtn {
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  border: 1px solid #e9ecef;
+}
+
+.portalBtn:hover {
+  background-color: #e9ecef;
+  transform: translateY(-2px);
+}
+
+.mobileToggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #2c3e50;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+}
+
+.highlight {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-left: 5px;
+  vertical-align: super;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .navLinks > li > a {
+    padding: 15px 12px;
+    font-size: 15px;
+  }
+  
+  .navActions a {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .topBar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .mainNav {
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  .navLinks {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+  
+  .navLinks.active {
+    display: flex;
+  }
+  
+  .navLinks > li > a {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  .dropdown {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    display: none;
+    padding-left: 20px;
+  }
+  
+  .navLinks li:hover .dropdown {
+    display: none;
+  }
+  
+  .dropdown.active {
+    display: block;
+  }
+  
+  .mobileToggle {
+    display: block;
+  }
+  
+  .navActions {
+    width: 100%;
+    padding: 15px;
+    justify-content: center;
+    border-top: 1px solid #f1f1f1;
+  }
+  
+  .navActions a {
+    flex: 1;
+    text-align: center;
+  }
+}
