@@ -1,0 +1,172 @@
+/* FacilitiesSection.module.css */
+.facilitiesSection {
+  padding: 6rem 2rem;
+  background-color: #fff;
+}
+
+.facilitiesContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.sectionHeader h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #0f2d53;
+}
+
+.highlight {
+  color: #c89b3c;
+}
+
+.sectionHeader p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Filter Tabs */
+.filterTabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.filterTabs button {
+  padding: 0.8rem 1.5rem;
+  background: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.filterTabs button:hover {
+  border-color: #c89b3c;
+  color: #c89b3c;
+}
+
+.filterTabs .activeFilter {
+  background-color: #0f2d53;
+  border-color: #0f2d53;
+  color: white;
+}
+
+/* Facilities Grid */
+.facilitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.facilityCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.facilityCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(15, 45, 83, 0.12);
+}
+
+.facilityImage {
+  height: 220px;
+  background-color: #f5f5f5; /* Placeholder color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem; /* Size for placeholder emoji */
+  /* Replace with: */
+  /* background-size: cover;
+  background-position: center; */
+}
+
+.facilityContent {
+  padding: 1.8rem;
+}
+
+.facilityContent h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #0f2d53;
+}
+
+.facilityContent p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.filterTabs {
+  display: flex;
+  justify-content: center; /* Centers the tabs */
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Increased gap for more space between tabs */
+  margin-bottom: 3rem;
+}
+
+.filterTabs button {
+  padding: 0.9rem 1.8rem; /* Slightly larger padding for a more substantial feel */
+  background: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600; /* Make font slightly bolder */
+  color: #666;
+  transition: all 0.3s ease;
+  flex: 0 1 auto; /* Allows buttons to grow slightly but not equally */
+  min-width: 120px; /* Ensure a minimum width for better balance */
+  text-align: center;
+}
+
+.filterTabs button:hover {
+  border-color: #c89b3c;
+  color: #c89b3c;
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+.filterTabs .activeFilter {
+  background-color: #0f2d53;
+  border-color: #0f2d53;
+  color: white;
+}
+
+.facilitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* More flexible columns */
+  gap: 2rem;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .facilitiesGrid {
+    grid-template-columns: 1fr;
+  }
+  .filterTabs {
+    gap: 0.5rem;
+  }
+  .filterTabs button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  .sectionHeader h2 {
+    font-size: 2.2rem;
+  }
+}

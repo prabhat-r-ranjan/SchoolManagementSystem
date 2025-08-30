@@ -1,0 +1,281 @@
+/* VisionSection.module.css */
+.visionSection { /* Renamed */
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  color: #1a1a1a;
+  overflow: hidden;
+}
+
+.visionContainer { /* Renamed */
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.visionContent h2 { /* Renamed */
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #0f2d53;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #c89b3c;
+  font-style: italic;
+  position: relative;
+  display: inline-block;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #c89b3c, transparent);
+  animation: underlinePulse 3s ease-in-out infinite;
+}
+
+@keyframes underlinePulse {
+  0%, 100% { opacity: 0.5; width: 50%; left: 25%; }
+  50% { opacity: 1; width: 100%; left: 0%; }
+}
+
+.legacyContent p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 2.5rem;
+  max-width: 90%;
+}
+
+/* Animated Graphic */
+.graphicContainer {
+  position: relative;
+  height: 180px;
+  width: 100%;
+  margin: 2.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(#0f2d53, #c89b3c, #0f2d53);
+  animation: rotate 10s linear infinite;
+}
+
+.orbits {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+}
+
+.orbit1, .orbit2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(15, 45, 83, 0.2);
+  border-radius: 50%;
+}
+
+.orbit1 {
+  width: 140px;
+  height: 140px;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.orbit2 {
+  width: 180px;
+  height: 180px;
+  animation: pulse 4s ease-in-out infinite reverse;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 1; transform: translate(-50%, -50%) scale(1.05); }
+}
+
+/* Stats Counter */
+.statsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.stat {
+  text-align: center;
+  padding: 1rem;
+}
+
+.statNumber {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #c89b3c;
+  margin-bottom: 0.5rem;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Right Side - Pillars */
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.pillarCard {
+  background: white;
+  padding: 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  border: 1px solid rgba(15, 45, 83, 0.08);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.pillarCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 0;
+  background: linear-gradient(to bottom, #c89b3c, #0f2d53);
+  transition: height 0.5s ease;
+}
+
+.pillarCard:hover,
+.pillarCard.active {
+  box-shadow: 0 15px 35px rgba(15, 45, 83, 0.12);
+  transform: translateY(-8px) scale(1.01);
+  border-color: rgba(200, 155, 60, 0.3);
+}
+
+.pillarCard.active::before,
+.pillarCard:hover::before {
+  height: 100%;
+}
+
+.pillarHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  z-index: 2;
+  position: relative;
+}
+
+.pillarIcon {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.pillarCard:hover .pillarIcon {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.pillarCard h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0f2d53;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.pillarDescription {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease, opacity 0.6s ease, margin-top 0.4s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.pillarCard.active .pillarDescription,
+.pillarCard:hover .pillarDescription {
+  max-height: 300px;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+.pillarDescription p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .legacyContainer {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    text-align: center;
+  }
+  .legacyContent p {
+    max-width: 100%;
+  }
+  .statsContainer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .pillarsGrid {
+    grid-template-columns: 1fr;
+  }
+  .statsContainer {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .graphicContainer {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .legacySection {
+    padding: 4rem 1.5rem;
+  }
+  .legacyContent h2 {
+    font-size: 2.2rem;
+  }
+  .pillarHeader {
+    flex-direction: column;
+    text-align: center;
+  }
+  .pillarIcon {
+    margin-right: 0;
+    margin-bottom: 0.8rem;
+  }
+}

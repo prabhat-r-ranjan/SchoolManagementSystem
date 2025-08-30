@@ -94,7 +94,7 @@ const Header = () => {
           >
             <li>
               <a 
-                href="#" 
+                href="/about-us" 
                 onClick={(e) => {
                   if (isMobileView) {
                     e.preventDefault();
@@ -239,19 +239,6 @@ const Header = () => {
         </div>
       </div>
       
-      <div className={styles.content}>
-        <h2>School Header Navigation</h2>
-        <p>I've reorganized the navigation menu based on your requirements:</p>
-        
-        <ul>
-          <li><strong>Moved Alumni section</strong> to a more prominent position between "Student Life" and "News & Updates"</li>
-          <li><strong>Merged Academics and Admissions</strong> into a single "Academics & Admissions" section</li>
-          <li><strong>Enhanced the Alumni section</strong> with additional sub-items to make it more comprehensive</li>
-          <li><strong>Maintained the original design</strong> while improving the information architecture</li>
-        </ul>
-        
-        <p>This reorganization creates a more logical flow for website visitors while keeping related items together.</p>
-      </div>
     </>
   );
 };

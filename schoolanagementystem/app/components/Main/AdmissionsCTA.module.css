@@ -1,0 +1,194 @@
+.admissionsCta {
+  background: linear-gradient(135deg, #0a192f 0%, #112240 100%);
+  padding: 4rem 2rem;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ctaContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.ctaContent {
+  flex: 1;
+  min-width: 300px;
+}
+
+.ctaContent h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  color: #d4af37;
+  font-weight: 700;
+}
+
+.ctaContent p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #ccd6f6;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.featureItem {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.featureItem:hover {
+  transform: translateY(-5px);
+}
+
+.featureIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.featureItem h4 {
+  color: #d4af37;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.featureItem p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  color: #a8b2d1;
+}
+
+.ctaForm {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.ctaForm h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #d4af37;
+}
+
+.ctaForm > p {
+  color: #ccd6f6;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.formGroup {
+  margin-bottom: 1.2rem;
+}
+
+.formRow {
+  display: flex;
+  gap: 1rem;
+}
+
+.formRow .formGroup {
+  flex: 1;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #d4af37;
+  font-weight: 500;
+}
+
+.formGroup input,
+.formGroup select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.formGroup input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: #d4af37;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.checkboxGroup input {
+  width: auto;
+  margin-right: 0.8rem;
+}
+
+.checkboxGroup label {
+  margin-bottom: 0;
+  color: #ccd6f6;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+  color: #0a192f;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+  background: linear-gradient(135deg, #e0ba3c 0%, #c69e23 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+.formNote {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #a8b2d1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ctaContainer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .formRow {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+}

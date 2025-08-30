@@ -1,0 +1,430 @@
+/* components/AboutUs/AboutUsPage.module.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+}
+
+.header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0a192f 0%, #020c1b 100%);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c9ab66, transparent);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #c9ab66, #d6c48f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #d6c48f;
+  font-style: italic;
+}
+
+.contentContainer {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.sidebar {
+  flex: 0 0 250px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.sidebar h3 {
+  color: #0a192f;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #c9ab66;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar button {
+  width: 100%;
+  text-align: left;
+  padding: 12px 15px;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #0a192f;
+  font-size: 1rem;
+}
+
+.sidebar button:hover {
+  background: rgba(201, 171, 102, 0.1);
+  color: #0a192f;
+}
+
+.sidebar button.active {
+  background: #c9ab66;
+  color: #0a192f;
+  font-weight: 600;
+}
+
+.mainContent {
+  flex: 1;
+}
+
+.section {
+  margin-bottom: 50px;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+  color: #0a192f;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #c9ab66;
+  font-size: 1.8rem;
+}
+
+.content {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.text {
+  flex: 1;
+}
+
+.text p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.imagePlaceholder {
+  flex: 0 0 300px;
+}
+
+.placeholder {
+  height: 200px;
+  background: #f1f1f1;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+}
+
+.placeholder i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #c9ab66;
+}
+
+.principalPhoto {
+  height: 300px;
+  background: #f1f1f1;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+}
+
+.principalPhoto i {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  color: #c9ab66;
+}
+
+.quote {
+  font-style: italic;
+  border-left: 4px solid #c9ab66;
+  padding-left: 20px;
+  margin: 20px 0;
+  color: #0a192f;
+  font-size: 1.2rem;
+}
+
+.signature {
+  font-weight: 600;
+  margin-top: 20px;
+  color: #0a192f;
+}
+
+.signature em {
+  font-weight: normal;
+  color: #666;
+}
+
+/* Vision & Mission Section */
+.card {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cardIcon {
+  width: 60px;
+  height: 60px;
+  background: #c9ab66;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 1.5rem;
+}
+
+.card h3 {
+  color: #0a192f;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.values {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.values h3 {
+  color: #0a192f;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.valuesList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.valuesItem {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+}
+
+.valuesIcon {
+  color: #c9ab66;
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+/* Leadership Team */
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.teamMember {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.teamMember:hover {
+  transform: translateY(-5px);
+}
+
+.memberPhoto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #e9ecef;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c9ab66;
+  font-size: 2.5rem;
+}
+
+.teamMember h3 {
+  color: #0a192f;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.role {
+  color: #c9ab66;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.teamMember p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Accreditation */
+.accreditationList {
+  margin-top: 20px;
+}
+
+.accreditationItem {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.accreditationLogo {
+  flex: 0 0 60px;
+  height: 60px;
+  background: #c9ab66;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.accreditationDetails {
+  flex: 1;
+}
+
+.accreditationDetails h3 {
+  color: #0a192f;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.accreditationDetails p {
+  color: #666;
+  margin-bottom: 3px;
+  line-height: 1.5;
+}
+
+.note {
+  margin-top: 25px;
+  padding: 15px;
+  background: #fff8e1;
+  border-left: 4px solid #c9ab66;
+  border-radius: 4px;
+}
+
+.note p {
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.note strong {
+  color: #0a192f;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .contentContainer {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    position: static;
+    flex: 1;
+  }
+  
+  .content {
+    flex-direction: column;
+  }
+  
+  .imagePlaceholder {
+    flex: 1;
+  }
+  
+  .teamGrid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  .valuesList {
+    grid-template-columns: 1fr;
+  }
+  
+  .accreditationItem {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    gap: 20px;
+  }
+  
+  .section {
+    padding: 20px;
+  }
+}
