@@ -1,72 +1,144 @@
-/* components/Header/Header.module.css */
-.headerContainer {
-  max-width: 1200px;
-  margin: 0 auto;
+/* Professional Header Styles */
+.container {
+  width: 100%;
+  max-width: none;
   border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   background: linear-gradient(135deg, #1a4b8c 0%, #2a5c9a 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 100;
+  margin-bottom: 24px;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+      rgba(255,255,255,0) 0%, 
+      rgba(255,255,255,0.3) 50%, 
+      rgba(255,255,255,0) 100%);
 }
 
 .topBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  background-color: #0f3057;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #2a4b39 0%, #358b54 100%);
   color: white;
+  position: relative;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 500;
 }
 
-.schoolName {
+.topBar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v20H0z' fill='none'/%3E%3Cpath d='M1 1v18h18V1H1zm1 1h16v16H2V2zm2 2h12v12H4V4zm2 2h8v8H6V6zm2 2h4v4H8V8z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.contactInfo {
+  display: flex;
+  gap: 24px;
+  margin-left: auto; /* Move to right side */
+}
+
+.contactInfo div {
   display: flex;
   align-items: center;
+  gap: 6px;
 }
 
-.schoolName h1 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-left: 10px;
-}
-
-.logo {
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(45deg, #ff7e5f, #feb47b);
-  border-radius: 50%;
+.socialIcons {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 12px;
+  margin-left: 30px; /* Add space between contact info and icons */
+}
+
+.socialIcons a {
   color: white;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.3s ease;
 }
 
-.topBarActions {
-  display: flex;
-  gap: 20px;
-}
-
-.topBarActions a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
+.socialIcons a:hover {
+  transform: translateY(-2px);
+  color: #ffd700;
 }
 
 .mainNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
-  background-color: white;
+  padding: 0 32px;
+  background: linear-gradient(to right, #ffffff 0%, #f8f9fa 100%);
   position: relative;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.schoolName {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 0;
+}
+
+.logo {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer; /* Make it clickable */
+}
+
+.logo:hover {
+  transform: scale(1.04);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2);
+}
+
+.schoolName h1 {
+  color: #2c3e50;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  cursor: pointer; /* Make it clickable */
+  transition: all 0.3s ease;
+  margin-right: 30px; /* Add space between school name and nav items */
+}
+
+.schoolName h1:hover {
+  color: #3498db; /* Change color on hover to indicate it's clickable */
 }
 
 .navLinks {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 40px; /* Add more space between school name and nav items */
 }
 
 .navLinks li {
@@ -75,30 +147,49 @@
 
 .navLinks > li > a {
   display: block;
-  padding: 20px 15px;
+  padding: 20px 16px;
   text-decoration: none;
   color: #2c3e50;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   transition: all 0.3s ease;
+  position: relative;
+  letter-spacing: 0.2px;
+}
+
+/* Remove the double line effect - only keep the dropdown border */
+.navLinks > li > a::after {
+  display: none; /* Remove the small line */
 }
 
 .navLinks > li > a:hover {
-  color: #3498db;
-  background-color: #f8f9fa;
+  color: #2c3e50;
+  background-color: rgba(52, 152, 219, 0.04);
 }
 
+/* Dropdown Styles - Fixed */
 .dropdown {
   position: absolute;
   top: 100%;
   left: 0;
   background-color: white;
   width: 220px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   border-radius: 0 0 8px 8px;
-  display: none;
+  display: block;
   z-index: 1000;
   padding: 10px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  border-top: 2px solid #3498db; /* Only keep this border */
+}
+
+.navLinks li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .dropdown li {
@@ -107,109 +198,272 @@
 
 .dropdown a {
   display: block;
-  padding: 12px 20px;
+  padding: 10px 20px;
   text-decoration: none;
   color: #2c3e50;
-  font-size: 14px;
+  font-size: 13.5px;
   transition: all 0.2s ease;
-  border-left: 3px solid transparent;
+  border-left: 2px solid transparent;
+  position: relative;
+}
+
+.dropdown a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  background: #3498db;
+  border-radius: 50%;
+  transform: translateY(-50%) scale(0);
+  transition: transform 0.2s ease;
+}
+
+.dropdown a:hover::before {
+  transform: translateY(-50%) scale(1);
 }
 
 .dropdown a:hover {
   background-color: #f8f9fa;
   color: #3498db;
-  border-left: 3px solid #3498db;
-}
-
-.navLinks li:hover .dropdown {
-  display: block;
+  border-left: 2px solid #3498db;
+  padding-left: 26px;
 }
 
 .navActions {
   display: flex;
-  gap: 15px;
+  gap: 14px;
 }
 
-.navActions a {
+/* Remove Apply Now button - only keep Portal button */
+.navActions a:first-child {
+  display: none; /* Hide Apply Now button */
+}
+
+.portalBtn {
+  background-color: white;
+  color: #2c3e50;
+  border: 1px solid #e9ecef;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 24px;
   border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
   transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
 }
 
-.applyBtn {
-  background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
-  color: white;
+.portalBtn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: all 0.6s ease;
 }
 
-.applyBtn:hover {
-  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
-  transform: translateY(-2px);
-}
-
-.portalBtn {
-  background-color: #f8f9fa;
-  color: #2c3e50;
-  border: 1px solid #e9ecef;
+.portalBtn:hover::before {
+  left: 100%;
 }
 
 .portalBtn:hover {
-  background-color: #e9ecef;
+  background-color: #f8f9fa;
   transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
+/* Improved Mobile Toggle (Hamburger Menu) */
 .mobileToggle {
   display: none;
   background: none;
   border: none;
-  font-size: 24px;
   color: #2c3e50;
   cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  position: relative;
   z-index: 1001;
 }
 
+.mobileToggle:hover {
+  background-color: #f1f3f5;
+}
+
+.mobileToggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #2c3e50;
+  margin: 2px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.mobileToggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobileToggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobileToggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 .highlight {
-  color: #e74c3c;
-  font-size: 12px;
-  margin-left: 5px;
+  color: #d4af37;
+  font-size: 11px;
+  margin-left: 4px;
   vertical-align: super;
+  font-weight: 600;
 }
 
 /* Responsive styles */
-@media (max-width: 992px) {
-  .navLinks > li > a {
-    padding: 15px 12px;
-    font-size: 15px;
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
   }
   
-  .navActions a {
-    padding: 8px 15px;
+  .navLinks > li > a {
+    padding: 18px 14px;
+    font-size: 14.5px;
+  }
+  
+  .portalBtn {
+    padding: 9px 20px;
+    font-size: 13.5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navLinks > li > a {
+    padding: 16px 12px;
+    font-size: 14px;
+  }
+  
+  .portalBtn {
+    padding: 8px 16px;
     font-size: 13px;
+  }
+  
+  .logo {
+    width: 46px;
+    height: 46px;
+    font-size: 18px;
+  }
+  
+  .schoolName h1 {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  
+  .navLinks {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 868px) {
+  .mainNav {
+    padding: 0 20px;
+  }
+  
+  .schoolName h1 {
+    font-size: 18px;
+    margin-right: 15px;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  
+  .navLinks > li > a {
+    padding: 16px 10px;
+    font-size: 13.5px;
+  }
+  
+  /* Show hamburger menu earlier */
+  .mobileToggle {
+    display: flex;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  
+  .navLinks {
+    display: none;
+  }
+  
+  .navActions {
+    margin-left: auto;
   }
 }
 
 @media (max-width: 768px) {
   .topBar {
-    flex-direction: column;
+    flex-direction: row;
+    gap: 14px;
+    padding: 12px 20px;
+  }
+  
+  /* Remove the logo from top bar */
+  .topBar .logo {
+    display: none;
+  }
+  
+  .contactInfo {
+    flex-direction: row;
     gap: 15px;
-    padding: 15px;
+    margin-left: 0;
+  }
+  
+  .socialIcons {
+    margin-left: 0;
   }
   
   .mainNav {
-    flex-direction: column;
-    padding: 0;
+    flex-direction: row;
+    padding: 0 15px;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  
+  .schoolName {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .schoolName h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 10px;
   }
   
   .navLinks {
     flex-direction: column;
     width: 100%;
     display: none;
+    margin-left: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
   }
   
   .navLinks.active {
@@ -217,8 +471,11 @@
   }
   
   .navLinks > li > a {
-    padding: 15px 20px;
-    border-bottom: 1px solid #f1f1f1;
+    padding: 16px 20px;
+    border-bottom: 1px solid #f1f3f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .dropdown {
@@ -227,11 +484,12 @@
     box-shadow: none;
     border-radius: 0;
     display: none;
-    padding-left: 20px;
-  }
-  
-  .navLinks li:hover .dropdown {
-    display: none;
+    padding-left: 24px;
+    opacity: 1;
+    transform: none;
+    border-top: none;
+    border-left: 2px solid #3498db;
+    visibility: visible;
   }
   
   .dropdown.active {
@@ -239,18 +497,83 @@
   }
   
   .mobileToggle {
-    display: block;
+    order: 3;
+    margin-left: 10px;
   }
   
   .navActions {
-    width: 100%;
-    padding: 15px;
-    justify-content: center;
-    border-top: 1px solid #f1f1f1;
+    width: auto;
+    padding: 0;
+    justify-content: flex-end;
+    border-top: none;
+    gap: 12px;
+    margin-left: auto;
+    order: 2;
   }
   
-  .navActions a {
-    flex: 1;
+  .portalBtn {
+    flex: 0;
     text-align: center;
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+  
+  /* Adjust top bar for mobile */
+  .contactInfo {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .socialIcons {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .topBar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+  }
+  
+  .contactInfo {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .contactInfo div {
+    justify-content: center;
+  }
+  
+  .schoolName h1 {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .logo {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+  
+  .mainNav {
+    padding: 0 10px;
+  }
+  
+  .mobileToggle {
+    width: 36px;
+    height: 36px;
+    margin-right: 5px;
+  }
+  
+  .mobileToggle span {
+    width: 20px;
+    height: 2px;
+    margin: 2px 0;
+  }
+  
+  .portalBtn {
+    padding: 6px 12px;
+    font-size: 12px;
   }
 }
