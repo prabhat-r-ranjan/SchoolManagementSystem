@@ -1,0 +1,565 @@
+/* AdmissionProcess.module.css */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #edf2f7 100%);
+  padding: 2rem 0;
+}
+
+.section {
+  width: 100%;
+  max-width: 1200px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  padding: 3rem;
+  margin: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.titleGroup {
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  color: #C9AB66;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.title {
+  color: #0F2D53;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #C9AB66, #D6B45A);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.intro {
+  color: #4A5568;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.processSection {
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  color: #0F2D53;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 100px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, #C9AB66, #0F2D53);
+  border-radius: 3px;
+}
+
+.timelineItem {
+  display: flex;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.timelineItem:hover, .timelineItem.active {
+  transform: translateX(10px);
+}
+
+.timelineMarker {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #0F2D53, #1A3C6C);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 5px 15px rgba(15, 45, 83, 0.2);
+}
+
+.stepNumber {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.timelineMarker i {
+  font-size: 1.2rem;
+}
+
+.timelineContent {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  flex-grow: 1;
+  border-left: 4px solid #C9AB66;
+}
+
+.timelineContent h4 {
+  color: #0F2D53;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.timelineContent p {
+  color: #4A5568;
+  margin-bottom: 1rem;
+}
+
+.stepDetails {
+  background: #F8F9FA;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.stepDetails ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stepDetails li {
+  padding: 0.3rem 0;
+  color: #4A5568;
+  position: relative;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+}
+
+.stepDetails li:before {
+  content: "•";
+  color: #C9AB66;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.infoCard {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #0F2D53;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.cardHeader i {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #C9AB66, #D6B45A);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.cardHeader h3 {
+  color: #0F2D53;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.tableContainer {
+  overflow-x: auto;
+}
+
+.ageTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ageTable th {
+  background: #F8F9FA;
+  color: #0F2D53;
+  padding: 0.8rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #E2E8F0;
+}
+
+.ageTable td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #E2E8F0;
+  color: #4A5568;
+}
+
+.ageTable tr:hover {
+  background: #F8F9FA;
+}
+
+.documentsList {
+  background: #F8F9FA;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.documentsList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.documentsList li {
+  padding: 0.5rem 0;
+  color: #4A5568;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.documentsList li:before {
+  content: "•";
+  color: #C9AB66;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+.feeSection {
+  margin-bottom: 4rem;
+}
+
+.feeTable {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  background: linear-gradient(135deg, #0F2D53, #1A3C6C);
+  color: white;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+}
+
+.feeRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.feeRow:last-child {
+  border-bottom: none;
+}
+
+.feeRow:hover {
+  background: #F8F9FA;
+}
+
+.feeItem {
+  color: #0F2D53;
+  font-weight: 500;
+}
+
+.feeAmount {
+  color: #0F2D53;
+  font-weight: 600;
+}
+
+.feeNotes {
+  color: #4A5568;
+  font-size: 0.9rem;
+}
+
+.feeNotes p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #4A5568;
+}
+
+.feeNotes i {
+  color: #C9AB66;
+}
+
+.ctaSection {
+  background: linear-gradient(135deg, #0F2D53, #1A3C6C);
+  border-radius: 12px;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 4rem;
+}
+
+.ctaContent {
+  flex: 2;
+  padding-right: 2rem;
+}
+
+.ctaContent h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.ctaContent p {
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.primaryBtn, .secondaryBtn, .tertiaryBtn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.primaryBtn {
+  background: #C9AB66;
+  color: white;
+  border: none;
+}
+
+.primaryBtn:hover {
+  background: #D6B45A;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(201, 171, 102, 0.3);
+}
+
+.secondaryBtn {
+  background: transparent;
+  color: white;
+  border: 2px solid #C9AB66;
+}
+
+.secondaryBtn:hover {
+  background: #C9AB66;
+  transform: translateY(-2px);
+}
+
+.tertiaryBtn {
+  background: transparent;
+  color: white;
+  border: none;
+  text-decoration: underline;
+}
+
+.tertiaryBtn:hover {
+  color: #C9AB66;
+}
+
+.ctaImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imagePlaceholder {
+  width: 180px;
+  height: 180px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: #C9AB66;
+  border: 3px solid #C9AB66;
+}
+
+.faqSection {
+  margin-bottom: 2rem;
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.faqItem {
+  background: #F8F9FA;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-left: 4px solid #C9AB66;
+}
+
+.faqItem h4 {
+  color: #0F2D53;
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.faqItem p {
+  color: #4A5568;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .section {
+    margin: 2rem 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .ctaSection {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .ctaContent {
+    padding-right: 0;
+  }
+  
+  .ctaButtons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .timeline::before {
+    left: 40px;
+  }
+  
+  .timelineMarker {
+    width: 60px;
+    height: 60px;
+    margin-right: 1.5rem;
+  }
+  
+  .stepNumber {
+    font-size: 1rem;
+  }
+  
+  .timelineMarker i {
+    font-size: 1rem;
+  }
+  
+  .tableHeader, .feeRow {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .intro {
+    font-size: 1rem;
+  }
+  
+  .timelineMarker {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+  }
+  
+  .ctaButtons {
+    flex-direction: column;
+  }
+  
+  .primaryBtn, .secondaryBtn, .tertiaryBtn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .imagePlaceholder {
+    width: 140px;
+    height: 140px;
+    font-size: 3rem;
+  }
+}

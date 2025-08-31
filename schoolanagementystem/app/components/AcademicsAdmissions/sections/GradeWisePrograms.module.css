@@ -1,0 +1,296 @@
+/* GradeWisePrograms.module.css */
+.section {
+  margin-bottom: 60px;
+  padding: 40px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #c9ab66;
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, rgba(201, 171, 102, 0.05) 0%, transparent 100%);
+  border-radius: 0 0 0 100%;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 35px;
+  padding-bottom: 18px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.sectionHeader i {
+  font-size: 2.2rem;
+  color: #c9ab66;
+  background: rgba(201, 171, 102, 0.1);
+  padding: 18px;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionHeader h2 {
+  color: #0f2d53;
+  font-size: 2.2rem;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 35px;
+  line-height: 1.7;
+  font-weight: 400;
+  border-left: 4px solid #c9ab66;
+  padding-left: 18px;
+}
+
+.programsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.programCard {
+  padding: 25px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border-radius: 14px;
+  transition: all 0.4s ease;
+  border: 1px solid #e9ecef;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.programCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, #c9ab66, #d6b45a);
+  transition: width 0.3s ease;
+}
+
+.programCard:hover::before {
+  width: 100%;
+  opacity: 0.05;
+}
+
+.programCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(15, 45, 83, 0.12);
+}
+
+.programHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.gradeIcon {
+  font-size: 2.5rem;
+  background: rgba(201, 171, 102, 0.1);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.gradeLevel {
+  color: #0f2d53;
+  font-size: 1.3rem;
+  margin: 0 0 5px 0;
+  font-weight: 600;
+}
+
+.programTitle {
+  color: #c9ab66;
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.programDescription {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.focusAreas {
+  margin-bottom: 25px;
+}
+
+.focusAreas h5 {
+  color: #0f2d53;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.focusAreas h5::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background: #c9ab66;
+  border-radius: 2px;
+}
+
+.focusAreas ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.focusAreas li {
+  padding: 8px 0;
+  color: #555;
+  position: relative;
+  padding-left: 25px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.focusAreas li:last-child {
+  border-bottom: none;
+}
+
+.focusAreas li::before {
+  content: '•';
+  color: #c9ab66;
+  font-weight: bold;
+  position: absolute;
+  left: 10px;
+  font-size: 1.2rem;
+}
+
+.learnMoreBtn {
+  background: linear-gradient(135deg, #0f2d53, #1a3c6c);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.learnMoreBtn:hover {
+  background: linear-gradient(135deg, #1a3c6c, #254b85);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(15, 45, 83, 0.2);
+}
+
+.learnMoreBtn::after {
+  content: '→';
+  transition: transform 0.3s ease;
+}
+
+.learnMoreBtn:hover::after {
+  transform: translateX(3px);
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .section {
+    margin: 0 20px 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .programsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 30px;
+    margin: 0 15px 50px;
+  }
+  
+  .sectionHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .sectionHeader h2 {
+    font-size: 1.9rem;
+  }
+  
+  .programsContainer {
+    grid-template-columns: 1fr;
+  }
+  
+  .programHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .gradeIcon {
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 20px;
+    margin: 0 10px 40px;
+  }
+  
+  .sectionHeader h2 {
+    font-size: 1.7rem;
+  }
+  
+  .lead {
+    font-size: 1.1rem;
+  }
+  
+  .programCard {
+    padding: 20px;
+  }
+  
+  .gradeIcon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+}

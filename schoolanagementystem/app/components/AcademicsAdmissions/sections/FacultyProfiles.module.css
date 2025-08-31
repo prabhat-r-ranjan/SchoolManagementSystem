@@ -1,0 +1,467 @@
+/* FacultyProfiles.module.css */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #edf2f7 100%);
+  padding: 2rem 0;
+}
+
+.section {
+  width: 100%;
+  max-width: 1200px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  padding: 3rem;
+  margin: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.titleGroup {
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  color: #C9AB66;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.title {
+  color: #0F2D53;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #C9AB66, #D6B45A);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.intro {
+  color: #4A5568;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.filterSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filterTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filterBtn {
+  padding: 0.8rem 1.5rem;
+  background: none;
+  border: 1px solid #E2E8F0;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #4A5568;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filterBtn:hover {
+  border-color: #C9AB66;
+  color: #C9AB66;
+}
+
+.activeFilter {
+  background-color: #0F2D53;
+  border-color: #0F2D53;
+  color: white;
+}
+
+.countBadge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.searchBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchBox i {
+  position: absolute;
+  left: 15px;
+  color: #A0AEC0;
+}
+
+.searchBox input {
+  padding: 0.8rem 1rem 0.8rem 40px;
+  border: 1px solid #E2E8F0;
+  border-radius: 50px;
+  min-width: 250px;
+  font-size: 0.9rem;
+}
+
+.searchBox input:focus {
+  outline: none;
+  border-color: #C9AB66;
+}
+
+.facultyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.facultyCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #EDF2F7;
+}
+
+.facultyCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(15, 45, 83, 0.12);
+}
+
+.cardImage {
+  position: relative;
+  height: 200px;
+  background: linear-gradient(135deg, #0F2D53, #1A3C6C);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  font-size: 4rem;
+}
+
+.departmentBadge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #C9AB66;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.gradeBadge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #0F2D53;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.cardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 45, 83, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.facultyCard:hover .cardOverlay {
+  opacity: 1;
+}
+
+.profileBtn {
+  background: #C9AB66;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.profileBtn:hover {
+  background: #D6B45A;
+  transform: translateY(-2px);
+}
+
+.cardContent {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.facultyName {
+  color: #0F2D53;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.facultyPosition {
+  color: #C9AB66;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.facultyInfo {
+  margin-bottom: 1.5rem;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #4A5568;
+  font-size: 0.9rem;
+}
+
+.infoItem i {
+  color: #C9AB66;
+  width: 16px;
+}
+
+.expertise {
+  margin-bottom: 1.5rem;
+}
+
+.expertise h4, .achievements h4 {
+  color: #0F2D53;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.expertiseTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background: rgba(201, 171, 102, 0.1);
+  color: #0F2D53;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.achievements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievements li {
+  padding: 0.3rem 0;
+  color: #4A5568;
+  position: relative;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.achievements li:before {
+  content: "•";
+  color: #C9AB66;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.cardFooter {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #EDF2F7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactBtn {
+  background: none;
+  border: 1px solid #0F2D53;
+  color: #0F2D53;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contactBtn:hover {
+  background: #0F2D53;
+  color: white;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.socialLinks a {
+  color: #4A5568;
+  transition: all 0.3s ease;
+}
+
+.socialLinks a:hover {
+  color: #C9AB66;
+}
+
+.ctaSection {
+  background: linear-gradient(135deg, #0F2D53, #1A3C6C);
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  color: white;
+}
+
+.ctaSection h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.ctaSection p {
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.ctaButton {
+  background: #C9AB66;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ctaButton:hover {
+  background: #D6B45A;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(201, 171, 102, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .section {
+    margin: 2rem 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .filterSection {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .filterTabs {
+    justify-content: center;
+  }
+  
+  .searchBox {
+    width: 100%;
+  }
+  
+  .searchBox input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .facultyGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .filterTabs {
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .intro {
+    font-size: 1rem;
+  }
+  
+  .cardContent {
+    padding: 1.2rem;
+  }
+  
+  .cardFooter {
+    padding: 1rem 1.2rem;
+  }
+  
+  .ctaSection {
+    padding: 2rem 1.5rem;
+  }
+  
+  .ctaSection h3 {
+    font-size: 1.5rem;
+  }
+}

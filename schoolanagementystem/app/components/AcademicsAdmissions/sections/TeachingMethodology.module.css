@@ -1,0 +1,358 @@
+/* TeachingMethodology.module.css */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #edf2f7 100%);
+  padding: 2rem;
+}
+
+.section {
+  width: 100%;
+  max-width: 1200px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 3rem;
+  margin: 2rem auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.titleContainer {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  color: #C9AB66;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: #0F2D53;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #C9AB66, #D6B45A);
+  margin: 0 auto 1.5rem;
+  border-radius: 2px;
+}
+
+.intro {
+  color: #4A5568;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.methodologyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.methodCard {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-top: 4px solid #0F2D53;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.methodCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(15, 45, 83, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.iconWrapper {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #0F2D53, #1A3C6C);
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.methodCard h3 {
+  color: #0F2D53;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.cardDescription {
+  color: #4A5568;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featureList li {
+  padding: 0.5rem 0;
+  color: #4A5568;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.featureList li:before {
+  content: "•";
+  color: #C9AB66;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+.approachSection {
+  background: linear-gradient(135deg, #0F2D53 0%, #1A3C6C 100%);
+  border-radius: 12px;
+  padding: 3rem;
+  margin-bottom: 4rem;
+  color: white;
+}
+
+.sectionTitle {
+  text-align: center;
+  color: #0F2D53;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.approachSection .sectionTitle {
+  color: white;
+}
+
+.approachGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.approachCard {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.approachIcon {
+  width: 70px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #C9AB66;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin: 0 auto 1.5rem;
+}
+
+.approachCard h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.approachCard p {
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.instructionalModel {
+  margin-bottom: 4rem;
+}
+
+.modelContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.modelStep {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #C9AB66;
+}
+
+.stepNumber {
+  width: 50px;
+  height: 50px;
+  background: #0F2D53;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 auto 1rem;
+}
+
+.modelStep h4 {
+  color: #0F2D53;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.modelStep p {
+  color: #4A5568;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.ctaSection {
+  background: linear-gradient(135deg, #F8F9FA 0%, #FFFFFF 100%);
+  border-radius: 12px;
+  padding: 3rem;
+  text-align: center;
+  border: 1px solid #E2E8F0;
+}
+
+.ctaContent h3 {
+  color: #0F2D53;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.ctaContent p {
+  color: #4A5568;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButton {
+  background: linear-gradient(135deg, #0F2D53, #1A3C6C);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 5px 15px rgba(15, 45, 83, 0.2);
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 45, 83, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .section {
+    padding: 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .section {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .methodologyGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .approachGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .modelContainer {
+    grid-template-columns: 1fr;
+  }
+  
+  .approachSection {
+    padding: 2rem 1.5rem;
+  }
+  
+  .cardHeader {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .iconWrapper {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.6rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+  
+  .ctaSection {
+    padding: 2rem 1rem;
+  }
+  
+  .ctaContent h3 {
+    font-size: 1.5rem;
+  }
+}

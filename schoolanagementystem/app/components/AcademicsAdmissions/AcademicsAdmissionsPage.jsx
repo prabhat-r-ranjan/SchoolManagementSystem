@@ -5,7 +5,18 @@ import styles from './AcademicsAdmissionsPage.module.css';
 
 // Import all section components
 import CurriculumSection from './sections/CurriculumSection';
-
+import GradeWisePrograms from './sections/GradeWisePrograms'; 
+import TeachingMethodology from './sections/TeachingMethodology';
+import FacultyProfiles from './sections/FacultyProfiles'; 
+import DigitalLearning from './sections/DigitalLearning';
+import AdmissionProcess from './sections/AdmissionProcess'; 
+import OnlineApplicationForm from './sections/OnlineApplicationForm';
+// import DigitalLearning from './sections/DigitalLearning';
+// import AdmissionSection from './sections/AdmissionSection';
+// import ApplicationSection from './sections/ApplicationSection';
+// import FeesSection from './sections/FeesSection';
+// import ScholarshipSection from './sections/ScholarshipSection';
+// import FAQSection from './sections/FAQSection';
 
 const AcademicsAdmissionsPage = () => {
   const [activeTab, setActiveTab] = useState('curriculum');
@@ -72,9 +83,15 @@ const AcademicsAdmissionsPage = () => {
 
         <div className={styles.content}>
           <CurriculumSection />
+          <GradeWisePrograms />
+          <TeachingMethodology />
+          <FacultyProfiles />
+          <DigitalLearning />
+          <AdmissionProcess />
+          <OnlineApplicationForm />
           {/* <ProgramsSection />
           <MethodologySection />
-          <FacultySection />
+          
           <DigitalSection />
           <AdmissionSection />
           <ApplicationSection />
