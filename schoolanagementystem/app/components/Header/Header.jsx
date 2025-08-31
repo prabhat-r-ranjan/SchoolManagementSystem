@@ -117,7 +117,7 @@ const Header = () => {
             </li>
             <li>
               <a 
-                href="#" 
+                href="/academics-admissions" 
                 onClick={(e) => {
                   if (isMobileView) {
                     e.preventDefault();
