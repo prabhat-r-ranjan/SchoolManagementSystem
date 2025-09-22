@@ -63,7 +63,7 @@ const Header = () => {
         <div className={styles.topBar}>
           <div className={styles.contactInfo}>
             <div><i className="fas fa-phone"></i> +1 (555) 123-4567</div>
-            <div><i className="fas fa-envelope"></i> info@schooldomain.edu</div>
+            <div><i className="fas fa-envelope"></i> info@sdrs.in</div>
           </div>
           <div className={styles.socialIcons}>
             <a href="#"><i className="fab fa-facebook-f"></i></a>
@@ -75,8 +75,8 @@ const Header = () => {
         
         <div className={styles.mainNav}>
           <div className={styles.schoolName}>
-            <div className={styles.logo}>SD</div>
-            <h1>SD International School</h1>
+            <div className={styles.logo}>SDRS</div>
+            <h1>SDRS School Of Excellence</h1>
           </div>
           
           <button 
@@ -145,7 +145,7 @@ const Header = () => {
             </li>
             <li>
               <a 
-                href="#" 
+                href="/campus-facilities" 
                 onClick={(e) => {
                   if (isMobileView) {
                     e.preventDefault();

@@ -72,37 +72,46 @@
   font-weight: 600;
 }
 
-.timeline {
+/* New Timeline Grid Layout */
+.timelineGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
   position: relative;
-  padding: 2rem 0;
 }
 
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 100px;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: linear-gradient(to bottom, #C9AB66, #0F2D53);
-  border-radius: 3px;
-}
-
-.timelineItem {
-  display: flex;
-  margin-bottom: 2rem;
+.timelineCard {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
+  border-left: 4px solid #C9AB66;
+  height: fit-content;
 }
 
-.timelineItem:hover, .timelineItem.active {
-  transform: translateX(10px);
+.timelineCard:hover, .timelineCard.active {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-left-color: #0F2D53;
 }
 
-.timelineMarker {
-  width: 80px;
-  height: 80px;
+.timelineCard.active {
+  background: linear-gradient(135deg, #f8f9fa 0%, #edf2f7 100%);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.stepIndicator {
+  width: 60px;
+  height: 60px;
   background: linear-gradient(135deg, #0F2D53, #1A3C6C);
   color: white;
   border-radius: 50%;
@@ -110,42 +119,33 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 2rem;
   flex-shrink: 0;
-  position: relative;
-  z-index: 2;
   box-shadow: 0 5px 15px rgba(15, 45, 83, 0.2);
 }
 
 .stepNumber {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.1rem;
 }
 
-.timelineMarker i {
-  font-size: 1.2rem;
+.stepIndicator i {
+  font-size: 1rem;
 }
 
-.timelineContent {
-  background: white;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  flex-grow: 1;
-  border-left: 4px solid #C9AB66;
-}
-
-.timelineContent h4 {
+.cardHeader h4 {
   color: #0F2D53;
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  margin: 0;
   font-weight: 600;
+  flex: 1;
 }
 
-.timelineContent p {
+.cardDescription {
   color: #4A5568;
   margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
 }
 
 .stepDetails {
@@ -167,6 +167,7 @@
   position: relative;
   padding-left: 1.2rem;
   font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 .stepDetails li:before {
@@ -176,6 +177,22 @@
   position: absolute;
   left: 0;
   font-size: 1.2rem;
+}
+
+.stepLine {
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #C9AB66, transparent);
+  opacity: 0.5;
+}
+
+/* Remove the old timeline styles */
+.timeline {
+  display: none;
 }
 
 .infoGrid {
@@ -505,22 +522,35 @@
     font-size: 2rem;
   }
   
-  .timeline::before {
-    left: 40px;
+  .intro {
+    font-size: 1rem;
   }
   
-  .timelineMarker {
-    width: 60px;
-    height: 60px;
-    margin-right: 1.5rem;
+  /* Mobile layout: 1 column for timeline */
+  .timelineGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .timelineCard {
+    padding: 1.5rem;
+  }
+  
+  .stepIndicator {
+    width: 50px;
+    height: 50px;
   }
   
   .stepNumber {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   
-  .timelineMarker i {
-    font-size: 1rem;
+  .stepIndicator i {
+    font-size: 0.9rem;
+  }
+  
+  .cardHeader h4 {
+    font-size: 1.1rem;
   }
   
   .tableHeader, .feeRow {
@@ -538,14 +568,19 @@
     font-size: 1.8rem;
   }
   
-  .intro {
-    font-size: 1rem;
+  .timelineCard {
+    padding: 1.2rem;
   }
   
-  .timelineMarker {
-    width: 50px;
-    height: 50px;
-    margin-right: 1rem;
+  .cardHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+  }
+  
+  .stepIndicator {
+    width: 45px;
+    height: 45px;
   }
   
   .ctaButtons {
@@ -561,5 +596,24 @@
     width: 140px;
     height: 140px;
     font-size: 3rem;
+  }
+}
+
+/* Additional responsive breakpoint for very small screens */
+@media (max-width: 360px) {
+  .timelineGrid {
+    gap: 1rem;
+  }
+  
+  .timelineCard {
+    padding: 1rem;
+  }
+  
+  .stepDetails {
+    padding: 0.8rem;
+  }
+  
+  .stepDetails li {
+    font-size: 0.85rem;
   }
 }

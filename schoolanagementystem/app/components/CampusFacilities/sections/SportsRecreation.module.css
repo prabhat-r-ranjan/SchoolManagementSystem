@@ -1,0 +1,588 @@
+/* SportsRecreation.module.css */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #edf2f7 100%);
+  padding: 2rem 0;
+}
+
+.section {
+  width: 100%;
+  max-width: 1200px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  padding: 3rem;
+  margin: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.titleGroup {
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  color: #C9AB66;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.title {
+  color: #0F2D53;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #C9AB66, #D6B45A);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.intro {
+  color: #4A5568;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.statsSection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #0F2D53, #1A3C6C);
+  border-radius: 12px;
+  color: white;
+}
+
+.statItem {
+  text-align: center;
+  padding: 1rem;
+}
+
+.statNumber {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #C9AB66;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.categorySection {
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  color: #0F2D53;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.categoryTabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.categoryTab {
+  padding: 1.5rem 1rem;
+  background: white;
+  border: 2px solid #E2E8F0;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #4A5568;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.categoryTab:hover {
+  border-color: #C9AB66;
+  color: #C9AB66;
+  transform: translateY(-3px);
+}
+
+.activeTab {
+  background: #0F2D53;
+  border-color: #0F2D53;
+  color: white;
+}
+
+.categoryContent {
+  background: #F8F9FA;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.categoryInfo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.categoryInfo h4 {
+  color: #0F2D53;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.categoryInfo p {
+  color: #4A5568;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.facilitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.facilityCard {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #EDF2F7;
+}
+
+.facilityCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(15, 45, 83, 0.1);
+  border-color: #C9AB66;
+}
+
+.facilityHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.facilityIcon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #0F2D53, #1A3C6C);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.facilityHeader h5 {
+  color: #0F2D53;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.facilityHeader p {
+  color: #4A5568;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.featuresList {
+  background: #F8F9FA;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.featuresList h6 {
+  color: #0F2D53;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.featuresList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featuresList li {
+  padding: 0.3rem 0;
+  color: #4A5568;
+  position: relative;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+}
+
+.featuresList li:before {
+  content: "•";
+  color: #C9AB66;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+.programsSection {
+  margin-bottom: 4rem;
+}
+
+.sectionDescription {
+  color: #4A5568;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.programsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.programCard {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+  border: 1px solid #EDF2F7;
+}
+
+.programCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(15, 45, 83, 0.1);
+  border-color: #C9AB66;
+}
+
+.programIcon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #C9AB66, #D6B45A);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin: 0 auto 1rem;
+}
+
+.programCard h4 {
+  color: #0F2D53;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.programCard p {
+  color: #4A5568;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.activitiesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.activityTag {
+  background: rgba(201, 171, 102, 0.1);
+  color: #0F2D53;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.achievementsSection {
+  background: linear-gradient(135deg, #0F2D53, #1A3C6C);
+  border-radius: 12px;
+  padding: 3rem;
+  margin-bottom: 4rem;
+  color: white;
+}
+
+.achievementsContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.achievementsContent h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.achievementsTimeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.achievementItem {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.achievementYear {
+  background: #C9AB66;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  min-width: 70px;
+  text-align: center;
+}
+
+.achievementText {
+  font-weight: 500;
+}
+
+.coachesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.coachCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.coachAvatar {
+  width: 50px;
+  height: 50px;
+  background: rgba(201, 171, 102, 0.2);
+  color: #C9AB66;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.coachInfo h5 {
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.coachInfo p {
+  margin-bottom: 0.3rem;
+  opacity: 0.9;
+}
+
+.coachInfo span {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.ctaSection {
+  background: linear-gradient(135deg, #F8F9FA 0%, #FFFFFF 100%);
+  border-radius: 12px;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  color: #0F2D53;
+  border: 1px solid #E2E8F0;
+}
+
+.ctaContent {
+  flex: 2;
+  padding-right: 2rem;
+}
+
+.ctaContent h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.ctaContent p {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #4A5568;
+}
+
+.ctaButton {
+  background: #0F2D53;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ctaButton:hover {
+  background: #1A3C6C;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(15, 45, 83, 0.2);
+}
+
+.ctaImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.ctaImage .imagePlaceholder {
+  width: 180px;
+  height: 180px;
+  background: rgba(15, 45, 83, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: #0F2D53;
+  border: 3px solid #0F2D53;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .section {
+    margin: 2rem 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .statsSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .categoryTabs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .facilitiesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .programsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .achievementsContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .ctaSection {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .ctaContent {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .statsSection {
+    grid-template-columns: 1fr;
+  }
+  
+  .categoryTabs {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .intro {
+    font-size: 1rem;
+  }
+  
+  .statNumber {
+    font-size: 2rem;
+  }
+  
+  .facilityHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+  }
+  
+  .facilityIcon {
+    align-self: center;
+  }
+  
+  .achievementItem {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+  }
+  
+  .coachCard {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+  }
+  
+  .ctaImage .imagePlaceholder {
+    width: 140px;
+    height: 140px;
+    font-size: 3rem;
+  }
+}

@@ -12,7 +12,7 @@ const SavitriFooter = () => {
             <div className={styles.logoSection}>
               <div className={styles.schoolBrand}>
                 <div className={styles.logo}>SDIS</div>
-                <h3 className={styles.schoolName}>Savitri Devi International School</h3>
+                <h3 className={styles.schoolName}>SDRS School of Excellence</h3>
               </div>
               <p className={styles.tagline}>Excellence in Education Since 1985</p>
               <div className={styles.socialIcons}>
@@ -70,7 +70,7 @@ const SavitriFooter = () => {
       <div className={styles.footerBottom}>
         <div className={styles.footerContainer}>
           <div className={styles.copyright}>
-            <p>&copy; {new Date().getFullYear()} Savitri Devi International School. All Rights Reserved.</p>
+            <p>&copy; {new Date().getFullYear()} SDRS School of Excellence. All Rights Reserved.</p>
           </div>
           <div className={styles.legalLinks}>
             <a href="#">Privacy Policy</a>

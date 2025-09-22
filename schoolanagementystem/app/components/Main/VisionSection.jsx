@@ -60,7 +60,7 @@ const VisionSection = () => {
           {/* Changed Headline and Text */}
           <h2>Launching a <span className={styles.highlight}>New Era</span></h2>
           <p>
-            Savitri Devi International School opens its doors in April 2026. We are not just starting a school; we are igniting a revolution in education. This is your opportunity to be part of the founding community that will set a new standard for excellence.
+            SDRS School of Excellence opens its doors in April 2026. We are not just starting a school; we are igniting a revolution in education. This is your opportunity to be part of the founding community that will set a new standard for excellence.
           </p>
           
           <div className={styles.graphicContainer}>

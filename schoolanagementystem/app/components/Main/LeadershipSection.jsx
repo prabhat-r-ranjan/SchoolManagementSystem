@@ -34,7 +34,7 @@ const LeadershipSection = () => {
       <div className={styles.container}>
         <div className={styles.sectionHeader}>
           <h2>Meet Our <span className={styles.highlight}>Visionary Leadership</span></h2>
-          <p>The foundation of Savitri Devi International School is built upon the expertise and passion of our distinguished founding team.</p>
+          <p>The foundation of SDRS School of Excellence is built upon the expertise and passion of our distinguished founding team.</p>
         </div>
 
         <div className={styles.leadershipGrid}>

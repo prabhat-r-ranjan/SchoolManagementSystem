@@ -13,16 +13,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Savitri Devi International School | Premium Education in Sasaram",
-  description: "Savitri Devi International School offers world-class education with state-of-the-art facilities. Premier CBSE/ICSE curriculum, experienced faculty, and holistic development for students.",
+  title: "SDRS School of Excellence | Premium Education in Sasaram",
+  description: "SDRS School of Excellence offers world-class education with state-of-the-art facilities. Premier CBSE/ICSE curriculum, experienced faculty, and holistic development for students.",
   keywords: "international school, premium education, Sasaram schools, best school in Sasram, CBSE school, ICSE school",
-  authors: [{ name: "Savitri Devi International School" }],
+  authors: [{ name: "SDRS School of Excellence" }],
   openGraph: {
-    title: "Savitri Devi International School | Premium Education in Sasaram",
+    title: "SDRS School of Excellence | Premium Education in Sasaram",
     description: "Experience excellence in education with world-class facilities and experienced faculty at SD International School.",
     type: "website",
     locale: "en_IN",
-    siteName: "Savitri Devi International School",
+    siteName: "SDRS School of Excellence",
   },
 };
 <head>

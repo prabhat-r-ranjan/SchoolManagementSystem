@@ -9,7 +9,7 @@ const HeroSection = () => {
   const slides = [
     {
       image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      alt: "Savitri Devi International School Campus"
+      alt: "SDRS School of Excellence Campus"
     },
     {
       image: "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
@@ -97,7 +97,7 @@ const HeroSection = () => {
             
             <h1 className={styles.title}>
               Welcome to
-              <span className={styles.highlight}> Savitri Devi International School</span>
+              <span className={styles.highlight}> SDRS School of Excellence</span>
             </h1>
             
             <p className={styles.subtitle}>

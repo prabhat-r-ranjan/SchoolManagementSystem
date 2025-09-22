@@ -11,7 +11,7 @@ const CurriculumSection = () => {
       </div>
       <div className={styles.sectionContent}>
         <div className={styles.textContent}>
-          <p className={styles.lead}>At Savitri Devi International School, we offer a comprehensive CBSE curriculum that balances academic rigor with holistic development, preparing students for excellence in Class 10 board examinations and beyond.</p>
+          <p className={styles.lead}>At SDRS School of Excellence, we offer a comprehensive CBSE curriculum that balances academic rigor with holistic development, preparing students for excellence in Class 10 board examinations and beyond.</p>
           
           <div className={styles.featureGrid}>
             <div className={styles.featureCard}>
