@@ -5,106 +5,113 @@ import styles from './DetailedAboutUs.module.css';
 const DetailedAboutUs = () => {
   const teamMembers = [
     {
-      name: "Your Name",
+      name: "Prabhat Ranjan",
       role: "Founder & Growth Strategist",
-      bio: "With over 8 years in digital marketing and business strategy, I've helped 50+ businesses achieve remarkable growth. My passion lies in bridging the gap between strategic vision and practical execution.",
-      expertise: ["Growth Strategy", "Digital Transformation", "ROI Optimization"],
-      funFact: "Believes the best strategies come from understanding both data and human behavior"
+      bio: "With over 8 years in digital marketing and business strategy, I've helped 50+ businesses achieve remarkable growth. My passion lies in understanding the unique challenges of Education, Real Estate, and Interior businesses and creating tailored growth strategies that deliver real results.",
+      expertise: ["Growth Strategy", "Digital Transformation", "ROI Optimization", "Education Marketing", "Real Estate Branding"],
+      funFact: "Believes that every business has a unique story waiting to be told - especially in Education, Real Estate, and Interior design spaces"
     },
     {
-      name: "Team Member",
-      role: "Senior Marketing Specialist", 
-      bio: "Specializing in performance marketing and conversion optimization, with a track record of delivering 3-5X ROI for clients across various industries.",
-      expertise: ["Paid Media", "CRO", "Analytics"],
-      funFact: "Loves turning complex data into actionable insights"
+      name: "Our Specialist Team",
+      role: "Industry Experts", 
+      bio: "A dedicated team of professionals with deep expertise in Education, Real Estate, and Interior design sectors. We understand the nuances of these industries and speak your language.",
+      expertise: ["Education Marketing", "Real Estate Branding", "Interior Design SEO", "Sector-Specific Strategy"],
+      funFact: "We've helped educational institutions increase enrollment by 47% and interior designers triple their client inquiries"
     }
   ];
 
   const companyTimeline = [
     {
       year: "2020",
-      title: "Foundation",
-      description: "Started with a vision to provide strategic marketing partnerships rather than transactional services"
+      title: "The Beginning",
+      description: "Founded by Prabhat Ranjan with a vision to provide meaningful marketing partnerships"
     },
     {
       year: "2021", 
-      title: "First Major Success",
-      description: "Helped an e-commerce client achieve 5X revenue growth in 6 months, validating our approach"
+      title: "Sector Specialization",
+      description: "Discovered our unique ability to drive growth in Education, Real Estate, and Interior design sectors"
     },
     {
       year: "2022",
-      title: "Education Focus",
-      description: "Discovered our passion for working with educational institutions and developed specialized frameworks"
+      title: "Framework Development",
+      description: "Created specialized marketing frameworks tailored for Education institutions, Real Estate developers, and Interior designers"
     },
     {
       year: "2023",
-      title: "Strategic Partnership Model",
-      description: "Formalized our long-term partnership approach with dedicated growth teams"
+      title: "Growth Acceleration",
+      description: "Helped multiple schools achieve 47% enrollment growth and interior designers triple their business"
     },
     {
       year: "2024",
-      title: "Current Focus",
-      description: "Helping schools and businesses build sustainable growth engines through integrated strategies"
+      title: "Future Focus",
+      description: "Expanding our impact across Education, Real Estate, and Interior design industries with innovative strategies"
     }
   ];
 
   const values = [
     {
-      icon: "🎯",
-      title: "Strategic Thinking",
-      description: "We don't just execute tasks—we solve business problems. Every action is tied to a strategic objective and measurable outcome.",
+      icon: "🎓",
+      title: "Education First",
+      description: "We understand that educational institutions need more than just marketing - they need community building and trust creation.",
       details: [
-        "Business-first approach",
-        "Data-driven decisions", 
-        "Long-term planning"
+        "Education sector expertise",
+        "Student enrollment strategies", 
+        "Community engagement"
       ]
     },
     {
-      icon: "🤝",
-      title: "True Partnership",
-      description: "We become an extension of your team. Your success is our success, and we're invested in your growth journey.",
+      icon: "🏠",
+      title: "Real Estate Excellence",
+      description: "Real Estate isn't just about properties; it's about dreams. We help you connect with potential buyers emotionally.",
       details: [
-        "Dedicated account teams",
-        "Transparent communication",
-        "Shared accountability"
+        "Property marketing",
+        "Developer branding",
+        "Buyer psychology"
       ]
     },
     {
-      icon: "💡",
-      title: "Innovation & Learning",
-      description: "The digital landscape evolves rapidly. We stay ahead by continuously learning, testing, and adapting our approaches.",
+      icon: "🎨",
+      title: "Interior Design Passion",
+      description: "We help interior designers showcase their creativity and connect with clients who appreciate their unique style.",
       details: [
-        "Continuous optimization",
-        "Test-and-learn mindset", 
-        "Industry research"
+        "Portfolio showcasing",
+        "Client attraction",
+        "Design storytelling"
       ]
     },
     {
       icon: "📈",
-      title: "Results Obsession",
-      description: "We measure success by the impact we create—increased revenue, better leads, stronger brands, and happier clients.",
+      title: "Results That Matter",
+      description: "We measure success by the impact we create—more students, faster property sales, and premium interior design clients.",
       details: [
         "ROI-focused approach",
-        "Clear performance metrics",
-        "Regular progress reviews"
+        "Sector-specific metrics",
+        "Growth tracking"
       ]
     }
   ];
 
   const clientStories = [
     {
-      client: "Private School Network",
-      challenge: "Declining enrollment and low community awareness",
-      solution: "Comprehensive brand strategy + digital presence overhaul",
-      results: "47% increase in qualified inquiries, 25% enrollment growth",
-      testimonial: "They understood our unique challenges and delivered a strategy that actually worked."
+      client: "Elite Private School",
+      challenge: "Declining enrollment and low community awareness in competitive education market",
+      solution: "Comprehensive education marketing strategy + community engagement program",
+      results: "47% increase in qualified inquiries, 25% enrollment growth in first year",
+      testimonial: "Prabhat and team understood the education sector like no other agency. They became true partners in our growth journey."
     },
     {
-      client: "E-commerce Brand", 
-      challenge: "Stagnant growth at $50K/month revenue",
-      solution: "Full funnel optimization + retention strategy",
-      results: "Grew to $250K/month in 6 months, 5X ROI",
-      testimonial: "The strategic approach transformed our business completely."
+      client: "Premium Interior Design Studio", 
+      challenge: "Struggling to attract high-value clients and showcase unique design philosophy",
+      solution: "Brand storytelling + targeted digital presence for interior design audience",
+      results: "Tripled high-value client inquiries, 200% increase in project value",
+      testimonial: "They helped us communicate our design philosophy in a way that attracted exactly the right clients."
+    },
+    {
+      client: "Real Estate Developer",
+      challenge: "Slow sales in competitive luxury property market",
+      solution: "Emotional branding + digital showcase of property uniqueness",
+      results: "Sold out phase 1 in 3 months, 40% higher price realization",
+      testimonial: "The team understood that we're not selling properties, we're selling dreams and lifestyles."
     }
   ];
 
@@ -118,12 +125,14 @@ const DetailedAboutUs = () => {
               <span>Our Story</span>
             </div>
             <h1 className={styles.heroTitle}>
-              More Than an Agency—<span className={styles.highlight}>Your Growth Partner</span>
+              Your Story, <span className={styles.highlight}>Amplified</span>
             </h1>
             <p className={styles.heroDescription}>
-              We started with a simple belief: businesses deserve marketing partners who are truly invested in their success. 
-              Not just service providers who execute tasks, but strategic thinkers who understand that real growth comes from 
-              aligning marketing with business objectives.
+              Founded by <strong>Prabhat Ranjan</strong>, we're not just another marketing agency. We're storytellers, 
+              growth partners, and sector specialists who understand the unique challenges and opportunities in 
+              <span className={styles.industryHighlight}> Education</span>, 
+              <span className={styles.industryHighlight}> Real Estate</span>, and 
+              <span className={styles.industryHighlight}> Interior Design</span>.
             </p>
           </div>
         </div>
@@ -131,29 +140,68 @@ const DetailedAboutUs = () => {
         {/* Origin Story */}
         <div className={styles.originSection}>
           <div className={styles.originContent}>
-            <h2>Why We Exist</h2>
+            <h2>Why We Do What We Do</h2>
             <div className={styles.originText}>
               <p>
-                After years in the marketing industry, we noticed a pattern: businesses were getting fragmented services 
-                from different agencies, with no one looking at the big picture. They had SEO experts, social media managers, 
-                and ad buyers—but no one connecting the dots to drive cohesive growth.
+                After years in the marketing industry, <strong>Prabhat Ranjan</strong> noticed something important: 
+                most agencies treat all businesses the same. But we know that <strong>Education</strong> institutions, 
+                <strong> Real Estate</strong> developers, and <strong>Interior</strong> designers have unique stories, 
+                unique challenges, and unique audiences.
               </p>
               <p>
-                That's when we decided to build something different. A partnership where strategy and execution work hand-in-hand, 
-                where we take the time to understand not just what you do, but why you do it. Where your success becomes our obsession.
+                That's why we built something different. A partnership where we don't just execute marketing campaigns—we 
+                become students of your industry. We learn your language, understand your audience, and help you tell your 
+                story in a way that resonates deeply.
               </p>
               <p>
-                Today, we specialize in working with educational institutions because we believe in the power of education to 
-                transform lives. The long-term nature of these partnerships allows us to build sustainable growth strategies 
-                that deliver lasting impact.
+                Whether you're shaping young minds in <strong>Education</strong>, creating dream homes in 
+                <strong> Real Estate</strong>, or designing beautiful spaces in <strong>Interior Design</strong>, 
+                we're here to make sure your ideal clients find you and choose you.
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Industry Focus */}
+        <div className={styles.industrySection}>
+          <h2>Where We Make Magic Happen</h2>
+          <div className={styles.industryGrid}>
+            <div className={`${styles.industryCard} ${styles.education}`}>
+              <div className={styles.industryIcon}>🎓</div>
+              <h3>Education</h3>
+              <p>Helping schools, colleges, and educational institutions attract the right students and build thriving learning communities</p>
+              <ul>
+                <li>Student enrollment growth</li>
+                <li>Community engagement</li>
+                <li>Brand positioning</li>
+              </ul>
+            </div>
+            <div className={`${styles.industryCard} ${styles.realEstate}`}>
+              <div className={styles.industryIcon}>🏠</div>
+              <h3>Real Estate</h3>
+              <p>Helping developers and realtors sell not just properties, but dreams, lifestyles, and future memories</p>
+              <ul>
+                <li>Property marketing</li>
+                <li>Developer branding</li>
+                <li>Buyer connection</li>
+              </ul>
+            </div>
+            <div className={`${styles.industryCard} ${styles.interior}`}>
+              <div className={styles.industryIcon}>🎨</div>
+              <h3>Interior Design</h3>
+              <p>Helping interior designers and architects attract clients who appreciate their unique style and vision</p>
+              <ul>
+                <li>Portfolio showcasing</li>
+                <li>Client attraction</li>
+                <li>Design storytelling</li>
+              </ul>
             </div>
           </div>
         </div>
 
         {/* Our Journey */}
         <div className={styles.timelineSection}>
-          <h2>Our Journey</h2>
+          <h2>Our Journey of Growth</h2>
           <div className={styles.timeline}>
             {companyTimeline.map((item, index) => (
               <div key={index} className={styles.timelineItem}>
@@ -169,16 +217,17 @@ const DetailedAboutUs = () => {
 
         {/* Team Section */}
         <div className={styles.teamSection}>
-          <h2>Meet Your Growth Partners</h2>
+          <h2>Your Growth Partners</h2>
           <p className={styles.teamIntro}>
-            We're a dedicated team of strategists, analysts, and specialists who become true partners in your growth journey.
+            Led by <strong>Prabhat Ranjan</strong>, we're a team that genuinely cares about your success in 
+            <strong> Education</strong>, <strong>Real Estate</strong>, and <strong>Interior Design</strong>.
           </p>
           <div className={styles.teamGrid}>
             {teamMembers.map((member, index) => (
               <div key={index} className={styles.teamMember}>
                 <div className={styles.memberHeader}>
                   <div className={styles.memberAvatar}>
-                    <span>👤</span>
+                    <span>{index === 0 ? "👨‍💼" : "👥"}</span>
                   </div>
                   <div className={styles.memberInfo}>
                     <h3>{member.name}</h3>
@@ -187,7 +236,7 @@ const DetailedAboutUs = () => {
                 </div>
                 <p className={styles.memberBio}>{member.bio}</p>
                 <div className={styles.expertise}>
-                  <h4>Areas of Expertise</h4>
+                  <h4>Specialized Expertise</h4>
                   <div className={styles.expertiseTags}>
                     {member.expertise.map((skill, skillIndex) => (
                       <span key={skillIndex} className={styles.expertiseTag}>
@@ -197,16 +246,16 @@ const DetailedAboutUs = () => {
                   </div>
                 </div>
                 <div className={styles.funFact}>
-                  <strong>Fun Fact:</strong> {member.funFact}
+                  <strong>Why We Care:</strong> {member.funFact}
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Deep Dive Values */}
+        {/* Values Section */}
         <div className={styles.valuesSection}>
-          <h2>Our Core Values in Action</h2>
+          <h2>Our Core Beliefs</h2>
           <div className={styles.valuesGrid}>
             {values.map((value, index) => (
               <div key={index} className={styles.valueCard}>
@@ -227,7 +276,7 @@ const DetailedAboutUs = () => {
 
         {/* Client Stories */}
         <div className={styles.storiesSection}>
-          <h2>Client Success Stories</h2>
+          <h2>Success Stories We're Proud Of</h2>
           <div className={styles.storiesGrid}>
             {clientStories.map((story, index) => (
               <div key={index} className={styles.storyCard}>
@@ -237,10 +286,10 @@ const DetailedAboutUs = () => {
                     <strong>The Challenge:</strong> {story.challenge}
                   </div>
                   <div className={styles.solution}>
-                    <strong>Our Solution:</strong> {story.solution}
+                    <strong>Our Approach:</strong> {story.solution}
                   </div>
                   <div className={styles.results}>
-                    <strong>The Results:</strong> {story.results}
+                    <strong>Impact Created:</strong> {story.results}
                   </div>
                   <div className={styles.testimonial}>
                     "{story.testimonial}"
@@ -251,50 +300,13 @@ const DetailedAboutUs = () => {
           </div>
         </div>
 
-        {/* Our Promise */}
-        <div className={styles.promiseSection}>
-          <div className={styles.promiseContent}>
-            <h2>Our Promise to You</h2>
-            <div className={styles.promisePoints}>
-              <div className={styles.promisePoint}>
-                <span className={styles.promiseIcon}>🎯</span>
-                <div>
-                  <h4>Strategic Partnership</h4>
-                  <p>We'll work as an extension of your team, deeply understanding your business and goals.</p>
-                </div>
-              </div>
-              <div className={styles.promisePoint}>
-                <span className={styles.promiseIcon}>📊</span>
-                <div>
-                  <h4>Transparent Results</h4>
-                  <p>You'll always know what we're doing, why we're doing it, and how it's performing.</p>
-                </div>
-              </div>
-              <div className={styles.promisePoint}>
-                <span className={styles.promiseIcon}>💡</span>
-                <div>
-                  <h4>Continuous Innovation</h4>
-                  <p>We'll constantly test, learn, and optimize to keep your growth engine running strong.</p>
-                </div>
-              </div>
-              <div className={styles.promisePoint}>
-                <span className={styles.promiseIcon}>🤝</span>
-                <div>
-                  <h4>Long-term Focus</h4>
-                  <p>We're here to build sustainable growth, not just quick wins that don't last.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Final CTA */}
         <div className={styles.finalCta}>
           <h2>Ready to Write Your Success Story?</h2>
-          <p>Let's build something remarkable together</p>
+          <p>Let's build something remarkable together in Education, Real Estate, or Interior Design</p>
           <div className={styles.ctaButtons}>
             <button className={styles.primaryBtn}>Start Your Partnership</button>
-            <button className={styles.secondaryBtn}>Meet the Team</button>
+            <button className={styles.secondaryBtn}>Chat with Prabhat</button>
           </div>
         </div>
       </div>

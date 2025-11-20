@@ -13,29 +13,12 @@ export default function BlogPage() {
       
       <div className={styles.blogPage}>
         {/* Hero Section */}
-        <section className={styles.hero}>
-          <div className={styles.container}>
-            <div className={styles.heroContent}>
-              <div className={styles.badge}>
-                <span>Insights & Strategies</span>
-              </div>
-              <h1 className={styles.heroTitle}>
-                Growth <span className={styles.highlight}>Insights</span> &<br />
-                Marketing <span className={styles.highlight}>Strategies</span>
-              </h1>
-              <p className={styles.heroDescription}>
-                Expert advice and proven strategies to help educational institutions and businesses 
-                achieve sustainable growth through digital marketing.
-              </p>
-            </div>
-          </div>
-        </section>
 
         {/* Blog Grid */}
         <section className={styles.blogSection}>
           <div className={styles.container}>
             <div className={styles.sectionHeader}>
-              <h2>Latest Articles</h2>
+              <h2>Articles & Insights</h2>
               <p>Fresh perspectives on education marketing and growth strategies</p>
             </div>
             

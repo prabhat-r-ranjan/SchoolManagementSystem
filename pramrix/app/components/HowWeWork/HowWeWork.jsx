@@ -6,70 +6,70 @@ const HowWeWork = () => {
   const processSteps = [
     {
       step: "01",
-      title: "The Deep Dive Immersion",
-      description: "We start by immersing ourselves in your business world. Through intensive workshops and data analysis, we uncover not just what you do, but why you do it - mapping every customer touchpoint and identifying hidden growth opportunities.",
-      activities: ["Business Immersion Workshop", "Customer Journey Mapping", "Revenue Stream Analysis", "Market Opportunity Audit"],
-      icon: "🔍",
-      humanTouch: "We learn your business like it's our own"
+      title: "Getting to Know Your Business",
+      description: "We start by sitting down with you and your team to truly understand what makes your business tick. We'll explore your goals, challenges, and what success looks like for you. This isn't just about data - it's about understanding your story, your customers, and your vision.",
+      activities: ["Discovery Workshop", "Customer Journey Analysis", "Business Goals Alignment", "Market Position Review"],
+      icon: "👋",
+      humanTouch: "We listen first, then we plan"
     },
     {
       step: "02",
-      title: "Strategic Growth Blueprint",
-      description: "Within 10 business days, we deliver a comprehensive growth blueprint that serves as our shared roadmap. It outlines clear initiatives, timelines, and success metrics tailored specifically to your business objectives.",
-      activities: ["Custom Growth Roadmap", "90-Day Action Plan", "Resource Planning", "Success Metrics Framework"],
-      icon: "🗺️",
-      humanTouch: "Your vision transformed into actionable strategy"
+      title: "Creating Your Custom Roadmap",
+      description: "Based on what we learn, we build a clear, actionable plan tailored specifically to your business. No generic templates - just real strategies designed to get you where you want to go. You'll see exactly how we'll help you grow, with timelines and milestones that make sense for your business.",
+      activities: ["Custom Growth Plan", "90-Day Action Steps", "Resource Planning", "Success Measurement Setup"],
+      icon: "🗓️",
+      humanTouch: "Your goals become our shared roadmap"
     },
     {
       step: "03",
-      title: "Integrated Growth Execution",
-      description: "This is where strategy meets action. Our cross-functional team works in sync across all channels, ensuring every initiative supports the others. We maintain constant communication so you're always in the loop.",
-      activities: ["Multi-Channel Implementation", "Weekly Progress Updates", "Quality Assurance", "Continuous Optimization"],
+      title: "Rolling Up Our Sleeves",
+      description: "This is where the magic happens. Our team gets to work implementing your strategy across all the right channels. We keep you updated every step of the way with clear communication and regular check-ins. You're never in the dark about what we're doing or why.",
+      activities: ["Multi-Channel Execution", "Weekly Progress Updates", "Quality Checks", "Ongoing Optimization"],
       icon: "⚡",
-      humanTouch: "We become your dedicated growth execution team"
+      humanTouch: "We work alongside you as part of your team"
     },
     {
       step: "04",
-      title: "Data-Driven Growth Cycles",
-      description: "We operate in continuous improvement cycles. Every two weeks, we analyze performance data, test new approaches, and refine our strategy based on what's actually working for your business.",
-      activities: ["Bi-Weekly Performance Reviews", "A/B Testing Framework", "ROI Optimization", "Strategy Evolution"],
-      icon: "📊",
-      humanTouch: "We measure what matters and adapt quickly"
+      title: "Growing and Improving Together",
+      description: "We believe the best results come from continuous improvement. Every couple of weeks, we review what's working, adjust what's not, and find new opportunities. This means your strategy stays fresh and effective as your business and market evolve.",
+      activities: ["Regular Performance Reviews", "Strategy Refinement", "ROI Optimization", "New Opportunity Identification"],
+      icon: "📈",
+      humanTouch: "We learn and adapt as we grow together"
     }
   ];
 
   const collaborationFeatures = [
     {
-      title: "Dedicated Growth Team",
-      description: "You get a dedicated team of specialists who become true partners in your growth journey. They learn your business inside out and are committed to your success.",
+      title: "Your Dedicated Team",
+      description: "You get real people who care about your success. We assign you a dedicated account manager and specialists who learn your business inside out and become true partners in your growth.",
       icon: "👥",
-      specific: "Your own dedicated experts"
+      specific: "Real people who know your business"
     },
     {
-      title: "Transparent Communication",
-      description: "We believe in complete transparency. You'll have direct access to our project tracking, real-time dashboards, and regular strategy sessions where we share both wins and learnings.",
+      title: "No Surprises Communication",
+      description: "We keep you in the loop with regular updates and honest conversations. You'll always know what we're working on, how it's performing, and what's coming next. We're available when you need us.",
       icon: "💬",
-      specific: "Regular strategy sessions"
+      specific: "Regular check-ins and updates"
     },
     {
-      title: "Agile Adaptation",
-      description: "When opportunities arise or challenges appear, we pivot quickly. Our agile approach means we can adapt strategies based on real-time performance data and market changes.",
+      title: "Flexible and Responsive",
+      description: "When opportunities pop up or things change (as they often do in business), we adapt quickly. We're not locked into rigid plans - we pivot based on what's actually working for you.",
       icon: "🔄",
-      specific: "Data-driven pivots"
+      specific: "We adapt to your changing needs"
     },
     {
-      title: "Shared Success Focus",
-      description: "We're deeply invested in your growth. Our approach is built around achieving your business objectives, with clear performance indicators that keep us aligned with your goals.",
+      title: "Focused on Your Success",
+      description: "We measure our success by yours. We're deeply committed to helping you hit your targets and grow your business. When you win, we win - it's that simple.",
       icon: "✅",
-      specific: "Goal-aligned performance"
+      specific: "Your goals drive everything we do"
     }
   ];
 
   const realResults = [
-    { metric: "3-5X", description: "ROI achieved for e-commerce businesses" },
-    { metric: "47%", description: "Average increase in qualified leads for B2B" },
-    { metric: "2.3X", description: "Higher conversion rates through optimization" },
-    { metric: "98%", description: "Client retention rate" }
+    { metric: "3-5X", description: "Return on investment for our e-commerce partners" },
+    { metric: "47%", description: "More qualified leads for B2B companies we work with" },
+    { metric: "2.3X", description: "Higher conversion rates through our optimization work" },
+    { metric: "98%", description: "Of clients choose to continue working with us" }
   ];
 
   return (
@@ -78,24 +78,24 @@ const HowWeWork = () => {
         {/* Header */}
         <div className={styles.header}>
           <div className={styles.badge}>
-            <span>Our Growth Framework</span>
+            <span>How We Work With You</span>
           </div>
           <h2 className={styles.title}>
-            A <span className={styles.highlight}>Strategic Partnership</span><br />
-            Built for <span className={styles.highlight}>Real Results</span>
+            A <span className={styles.highlight}>Partnership</span> That Feels<br />
+            Like <span className={styles.highlight}>Part of Your Team</span>
           </h2>
           <p className={styles.subtitle}>
-            Our proven framework combines strategic thinking with hands-on execution to deliver 
-            sustainable growth. We work as an extension of your team, focused on achieving your 
-            business objectives.
+            We don't just deliver marketing services - we become an extension of your team. 
+            We take the time to understand your business, your challenges, and your vision, 
+            then work alongside you to make it happen.
           </p>
         </div>
 
         {/* Process Timeline */}
         <div className={styles.processSection}>
           <div className={styles.processIntro}>
-            <h3>The Growth Journey We Take Together</h3>
-            <p>A structured approach that adapts to your unique business needs and goals</p>
+            <h3>Our Approach: Simple, Transparent, Effective</h3>
+            <p>Four straightforward steps to building your growth engine together</p>
           </div>
           <div className={styles.processTimeline}>
             {processSteps.map((step, index) => (
@@ -113,11 +113,14 @@ const HowWeWork = () => {
                       {step.humanTouch}
                     </div>
                     <div className={styles.activities}>
-                      {step.activities.map((activity, activityIndex) => (
-                        <span key={activityIndex} className={styles.activity}>
-                          {activity}
-                        </span>
-                      ))}
+                      <span className={styles.activitiesLabel}>What we'll do together:</span>
+                      <div className={styles.activitiesRow}>
+                        {step.activities.map((activity, activityIndex) => (
+                          <span key={activityIndex} className={styles.activity}>
+                            {activity}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -135,8 +138,8 @@ const HowWeWork = () => {
         {/* Real Results */}
         <div className={styles.resultsSection}>
           <div className={styles.resultsHeader}>
-            <h3>Measurable Business Impact</h3>
-            <p>Real results delivered through our strategic partnership approach</p>
+            <h3>Real Results for Real Businesses</h3>
+            <p>Here's what our partnership approach has delivered for businesses like yours</p>
           </div>
           <div className={styles.resultsGrid}>
             {realResults.map((result, index) => (
@@ -151,8 +154,8 @@ const HowWeWork = () => {
         {/* Collaboration Approach */}
         <div className={styles.collaborationSection}>
           <div className={styles.collaborationHeader}>
-            <h3>True Partnership Approach</h3>
-            <p>Working together as one team focused on your success</p>
+            <h3>Working Together Should Feel Easy</h3>
+            <p>That's why we've built our approach around clear communication and real partnership</p>
           </div>
           <div className={styles.collaborationGrid}>
             {collaborationFeatures.map((feature, index) => (
@@ -172,15 +175,15 @@ const HowWeWork = () => {
         {/* Final CTA */}
         <div className={styles.ctaSection}>
           <div className={styles.ctaContent}>
-            <h3>Ready to Build Your Growth Engine?</h3>
-            <p>Let's discuss your business goals and explore how our partnership can drive meaningful growth.</p>
+            <h3>Ready to See What We Can Do Together?</h3>
+            <p>Let's have a real conversation about your business and see if we're the right fit to help you grow.</p>
             <div className={styles.ctaButtons}>
-              <button className={styles.primaryBtn}>Start Your Growth Journey</button>
-              <button className={styles.secondaryBtn}>View Our Approach</button>
+              <button className={styles.primaryBtn}>Start the Conversation</button>
+              <button className={styles.secondaryBtn}>See Client Stories</button>
             </div>
             <div className={styles.ctaNote}>
               <span className={styles.noteIcon}>🤝</span>
-              <span>Complimentary consultation • No obligation • Actionable insights</span>
+              <span>No sales pitch • Just honest advice • See if we can help</span>
             </div>
           </div>
         </div>

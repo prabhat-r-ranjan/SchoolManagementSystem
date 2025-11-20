@@ -3,6 +3,10 @@
   padding: var(--space-3xl) 0;
   background: var(--color-white);
   position: relative;
+  /* Fix for header overlap - adjust this value based on your header height */
+  padding-top: 100px;
+  /* Ensure smooth scrolling to this section */
+  scroll-margin-top: 80px;
 }
 
 .container {
@@ -18,6 +22,8 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  /* Additional spacing to ensure no overlap */
+  margin-top: 20px;
 }
 
 .badge {
@@ -328,6 +334,18 @@
   box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
 
+.packageServices {
+  margin-bottom: var(--space-xl);
+}
+
+.packageServices h5 {
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  color: var(--color-gray-700);
+  margin-bottom: var(--space-md);
+  text-align: center;
+}
+
 /* Final CTA */
 .finalCta {
   background: linear-gradient(135deg, var(--color-gray-50) 0%, var(--color-white) 100%);
@@ -397,6 +415,10 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .strategicServices {
+    padding-top: 80px; /* Adjust for mobile header if needed */
+  }
+  
   .title {
     font-size: var(--text-2xl);
   }
@@ -444,5 +466,9 @@
   
   .benefitCard {
     padding: var(--space-lg);
+  }
+  
+  .strategicServices {
+    padding-top: 60px; /* Further adjustment for very small screens */
   }
 }
