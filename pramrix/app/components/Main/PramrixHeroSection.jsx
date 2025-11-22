@@ -6,8 +6,9 @@ import styles from './PramrixHeroSection.module.css';
 const HeroSection = () => {
   const [isLoading, setIsLoading] = useState(true);
 
-  const handleFreeStrategy = () => {
-    console.log('Get Free Strategy clicked');
+  const handleFreeDemo = () => {
+    console.log('Get Free Demo clicked');
+    // Add your demo booking logic here
   };
 
   const handleCallNow = () => {
@@ -20,8 +21,8 @@ const HeroSection = () => {
       <div className={styles.background}>
         <div className={styles.backgroundImage}>
           <img 
-            src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-            alt="Digital Marketing Analytics" 
+            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+            alt="Modern School Classroom" 
             className={`${styles.image} ${isLoading ? styles.loading : styles.loaded}`}
             onLoad={() => setIsLoading(false)}
           />
@@ -33,74 +34,71 @@ const HeroSection = () => {
         <div className={styles.content}>
           {/* Premium Badge */}
           <div className={styles.badge}>
-            <span>🚀 3-5X ROI Guaranteed</span>
+            <span>🚀 Save 100+ Staff Hours Monthly</span>
           </div>
 
-          {/* Modern Headline */}
+          {/* Modern Headline - FOCUSED ON EDUCATION */}
           <h1 className={styles.headline}>
-            Your Growth Partner in 
-            <span className={styles.highlight}> Real Estate, Interiors,</span> 
-            <span className={styles.highlight}> Home Brands & Premium Schools</span>
+            Stop Managing Chaos. 
+            <span className={styles.highlight}> Start Leading Your School</span>
           </h1>
 
           {/* Clean Sub Headline */}
           <h2 className={styles.subheadline}>
-            Sales-Driven Digital Marketing That Delivers Results
+            AI-Powered Automation for Attendance, Fees & Parent Communication
           </h2>
 
           {/* Concise Description */}
           <p className={styles.description}>
-            At <strong>Pramrix</strong>, we don't just run campaigns - we help you grow. 
-            Our strategies are built on data, experience and real business understanding.
-            <br/>
-            We specialize in generating <strong>high-intent leads</strong> and driving consistent
-            <strong> 3–5X ROI</strong> for businesses in competitive markets.
+            At <strong>Pramrix</strong>, we automate your daily administrative tasks so your staff can focus on education, not paperwork.
+            <br/><br/>
+            Our AI systems handle <strong>attendance tracking</strong>, <strong>fee reminders</strong>, and <strong>24/7 parent communication</strong> - saving you hundreds of hours monthly.
           </p>
 
           {/* Modern CTA Buttons */}
           <div className={styles.ctaSection}>
             <button 
               className={styles.primaryButton}
-              onClick={handleFreeStrategy}
+              onClick={handleFreeDemo}
             >
-              <span className={styles.buttonIcon}>🎯</span>
-              Get Your Free Strategy
+              <span className={styles.buttonIcon}>🤖</span>
+              Get Free Demo
             </button>
             <button 
               className={styles.secondaryButton}
               onClick={handleCallNow}
             >
               <span className={styles.buttonIcon}>📞</span>
-              Call Now
+              Call for Consultation
             </button>
           </div>
 
-          {/* Elegant Trust Metrics */}
+          {/* Updated Trust Metrics for Education */}
           <div className={styles.trustMetrics}>
             <div className={styles.metric}>
-              <div className={styles.metricIcon}>📈</div>
-              <span className={styles.metricNumber}>3-5X</span>
-              <span className={styles.metricLabel}>Guaranteed ROI</span>
+              <div className={styles.metricIcon}>⏰</div>
+              <span className={styles.metricNumber}>100+</span>
+              <span className={styles.metricLabel}>Hours Saved/Month</span>
             </div>
             <div className={styles.metric}>
               <div className={styles.metricIcon}>🎯</div>
-              <span className={styles.metricNumber}>100%</span>
-              <span className={styles.metricLabel}>Sales Focused</span>
+              <span className={styles.metricNumber}>24/7</span>
+              <span className={styles.metricLabel}>Parent Support</span>
             </div>
             <div className={styles.metric}>
               <div className={styles.metricIcon}>⚡</div>
-              <span className={styles.metricNumber}>24/7</span>
-              <span className={styles.metricLabel}>Monitoring</span>
+              <span className={styles.metricNumber}>Zero</span>
+              <span className={styles.metricLabel}>Manual Errors</span>
             </div>
           </div>
         </div>
 
-        {/* Professional Image on Right */}
+        {/* Professional Image on Right - EDUCATION FOCUSED */}
         <div className={styles.visual}>
           <div className={styles.imageContainer}>
             <img 
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-              alt="Business professionals collaborating"
+              src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
+              alt="School dashboard and automation interface"
               className={styles.heroImage}
             />
             <div className={styles.imageOverlay}></div>

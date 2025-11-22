@@ -4,78 +4,64 @@ import styles from './AboutUs.module.css';
 
 const AboutUs = () => {
   const stats = [
-    { number: "50+", label: "Businesses Transformed" },
-    { number: "3-5X", label: "Average ROI Delivered" },
-    { number: "98%", label: "Client Retention Rate" },
-    { number: "24/7", label: "Strategic Partnership" }
+    { number: "100+", label: "Staff Hours Saved Monthly" },
+    { number: "24/7", label: "Parent Communication" },
+    { number: "Zero", label: "Manual Errors" },
+    { number: "50+", label: "Processes Automated" }
   ];
 
   const values = [
     {
+      icon: "🤖",
+      title: "AI-Powered",
+      description: "Smart automation that learns and improves"
+    },
+    {
+      icon: "⚡", 
+      title: "Efficiency Focused",
+      description: "Eliminating administrative bottlenecks"
+    },
+    {
       icon: "🎯",
-      title: "Data-Driven Approach",
-      description: "Decisions based on analytics, not guesswork"
+      title: "Education First",
+      description: "Built specifically for schools and colleges"
     },
     {
-      icon: "🚀",
-      title: "Results-Obsessed", 
-      description: "Focused on measurable growth and outcomes"
-    },
-    {
-      icon: "🤝",
-      title: "Partnership Mindset",
-      description: "We work as an extension of your team"
-    },
-    {
-      icon: "💡",
-      title: "Innovation Focused",
-      description: "Always adapting to stay ahead of trends"
+      icon: "🛡️",
+      title: "Reliable & Secure",
+      description: "Enterprise-grade security and uptime"
     }
   ];
 
   return (
     <section id="about-us" className={styles.aboutUs}>
       <div className={styles.container}>
-        {/* Header */}
+        {/* Header - SIMPLIFIED */}
         <div className={styles.header}>
           <div className={styles.badge}>
-            <span>Our Story</span>
+            <span>About Pramrix</span>
           </div>
           <h2 className={styles.title}>
-            Your <span className={styles.highlight}>Strategic Growth Partner</span>
+            Transforming Education Through <span className={styles.highlight}>AI Automation</span>
           </h2>
           <p className={styles.subtitle}>
-            We're your dedicated growth team, combining strategy and execution to drive real business results.
+            We help schools and colleges automate administrative tasks, so educators can focus on what matters most - teaching.
           </p>
         </div>
 
-        {/* Why We Exist - Simplified */}
-        <div className={styles.storySection}>
-          <h3>Why We Exist</h3>
+        {/* Our Story - SHORTENED */}
+        <div className={styles.story}>
           <p>
-            Growing your business requires more than just tactics—it needs a partner who understands your vision 
-            and turns it into measurable growth. We blend strategy with execution to make that happen.
+            Founded by software engineers with 15+ years of experience, we saw schools struggling with manual processes 
+            while technology advanced elsewhere. We built Pramrix to bring intelligent automation to education.
           </p>
         </div>
 
-        {/* Mission & Vision */}
-        <div className={styles.missionVision}>
-          <div className={styles.mission}>
-            <h4>Our Mission</h4>
-            <p>To be your most trusted growth partner for sustainable scaling.</p>
-          </div>
-          <div className={styles.vision}>
-            <h4>Our Vision</h4>
-            <p>To redefine growth through strategic partnership and expert execution.</p>
-          </div>
-        </div>
-
-        {/* Stats - Quick Scan */}
-        <div className={styles.statsSection}>
-          <h3>Our Impact</h3>
+        {/* Stats - EDUCATION FOCUSED */}
+        <div className={styles.stats}>
           <div className={styles.statsGrid}>
             {stats.map((stat, index) => (
-              <div key={index} className={styles.statCard}>
+              <div key={index} className={styles.stat}>
                 <div className={styles.statNumber}>{stat.number}</div>
                 <div className={styles.statLabel}>{stat.label}</div>
               </div>
@@ -83,41 +69,17 @@ const AboutUs = () => {
           </div>
         </div>
 
-        {/* Values - Visual & Quick */}
-        <div className={styles.valuesSection}>
-          <h3>Our Core Values</h3>
+        {/* Values - EDUCATION THEME */}
+        <div className={styles.values}>
+          <h3>Why Schools Choose Us</h3>
           <div className={styles.valuesGrid}>
             {values.map((value, index) => (
-              <div key={index} className={styles.valueCard}>
+              <div key={index} className={styles.value}>
                 <div className={styles.valueIcon}>{value.icon}</div>
-                <h4 className={styles.valueTitle}>{value.title}</h4>
-                <p className={styles.valueDescription}>{value.description}</p>
+                <h4>{value.title}</h4>
+                <p>{value.description}</p>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Team Approach - Short & Sweet */}
-        <div className={styles.teamSection}>
-          <h3>Your Dedicated Growth Team</h3>
-          <p>We become an extension of your team, working together to achieve your goals.</p>
-          <div className={styles.teamFeatures}>
-            <div className={styles.teamFeature}>
-              <span className={styles.featureIcon}>👥</span>
-              <span>Dedicated Team</span>
-            </div>
-            <div className={styles.teamFeature}>
-              <span className={styles.featureIcon}>📊</span>
-              <span>Monthly Reviews</span>
-            </div>
-            <div className={styles.teamFeature}>
-              <span className={styles.featureIcon}>⚡</span>
-              <span>Agile Execution</span>
-            </div>
-            <div className={styles.teamFeature}>
-              <span className={styles.featureIcon}>🎯</span>
-              <span>Performance Focus</span>
-            </div>
           </div>
         </div>
       </div>

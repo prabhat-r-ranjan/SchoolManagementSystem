@@ -480,6 +480,149 @@
   font-size: 1.2rem;
 }
 
+/* Add these new styles for the phases section */
+.phasesSection {
+  margin-bottom: var(--space-3xl);
+  background: var(--color-white);
+  padding: var(--space-3xl);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.phasesSection h3 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--space-md);
+  color: var(--color-black);
+  text-align: center;
+}
+
+.phasesSection p {
+  font-size: var(--text-lg);
+  color: var(--color-gray-600);
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.phasesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-xl);
+}
+
+.phaseCard {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-lg);
+  border: 2px solid #e2e8f0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.phaseCard:hover {
+  transform: translateY(-3px);
+  border-color: #667eea;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+}
+
+.phaseCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.phaseHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.phaseNumber {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-bold);
+  font-size: var(--text-sm);
+}
+
+.phaseHeader h4 {
+  font-size: var(--text-lg);
+  font-weight: var(--font-bold);
+  color: var(--color-black);
+  margin: 0;
+}
+
+.phaseFocus {
+  font-size: var(--text-sm);
+  color: var(--color-gray-700);
+  margin-bottom: var(--space-lg);
+  padding: var(--space-md);
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: var(--radius-md);
+  border-left: 4px solid #667eea;
+}
+
+.phaseDeliverables {
+  font-size: var(--text-sm);
+  color: var(--color-gray-700);
+}
+
+.phaseDeliverables strong {
+  color: var(--color-black);
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+.phaseDeliverables ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.phaseDeliverables li {
+  padding: var(--space-xs) 0;
+  position: relative;
+  padding-left: var(--space-lg);
+}
+
+.phaseDeliverables li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: var(--font-bold);
+}
+
+/* Update the CTA note for education focus */
+.ctaNote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--color-gray-600);
+  background: #f0f9ff;
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  border: 1px solid #e0f2fe;
+}
+
+.noteIcon {
+  font-size: 1.2rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .howWeWork {

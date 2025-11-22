@@ -519,6 +519,44 @@
   margin-top: var(--space-md);
 }
 
+/* Add these new industry card styles */
+.industryCard.attendance {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+}
+
+.industryCard.communication {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+}
+
+.industryCard.fees {
+  background: linear-gradient(135deg, #d946ef 0%, #ec4899 100%);
+}
+
+/* Update hero background for education theme */
+.hero {
+  background: linear-gradient(135deg, #3b82f60d 0%, #8b5cf60d 100%), 
+              url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+}
+
 /* Final CTA */
 .finalCta {
   text-align: center;

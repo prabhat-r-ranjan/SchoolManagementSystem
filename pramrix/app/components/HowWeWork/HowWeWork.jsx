@@ -6,70 +6,88 @@ const HowWeWork = () => {
   const processSteps = [
     {
       step: "01",
-      title: "Getting to Know Your Business",
-      description: "We start by sitting down with you and your team to truly understand what makes your business tick. We'll explore your goals, challenges, and what success looks like for you. This isn't just about data - it's about understanding your story, your customers, and your vision.",
-      activities: ["Discovery Workshop", "Customer Journey Analysis", "Business Goals Alignment", "Market Position Review"],
-      icon: "👋",
-      humanTouch: "We listen first, then we plan"
+      title: "Understanding Your School's Unique Needs",
+      description: "We start by visiting your campus and speaking with your staff to understand your specific challenges. We'll analyze your current processes, identify bottlenecks, and discover where automation can make the biggest impact. This isn't about selling a generic solution - it's about building what your school actually needs.",
+      activities: ["Campus Process Audit", "Staff Interviews", "Pain Point Analysis", "Automation Opportunity Mapping"],
+      icon: "🏫",
+      humanTouch: "We walk in your shoes to understand your daily challenges"
     },
     {
       step: "02",
-      title: "Creating Your Custom Roadmap",
-      description: "Based on what we learn, we build a clear, actionable plan tailored specifically to your business. No generic templates - just real strategies designed to get you where you want to go. You'll see exactly how we'll help you grow, with timelines and milestones that make sense for your business.",
-      activities: ["Custom Growth Plan", "90-Day Action Steps", "Resource Planning", "Success Measurement Setup"],
+      title: "Building Your Custom Automation Roadmap",
+      description: "Based on our discovery, we create a phased implementation plan that aligns with your academic calendar. We prioritize solutions that deliver immediate value while building toward your complete digital transformation. You'll see exactly what we'll automate, when, and how it benefits your school.",
+      activities: ["Phased Implementation Plan", "Academic Calendar Alignment", "Staff Training Schedule", "Success Metrics Definition"],
       icon: "🗓️",
-      humanTouch: "Your goals become our shared roadmap"
+      humanTouch: "Your academic calendar becomes our implementation timeline"
     },
     {
       step: "03",
-      title: "Rolling Up Our Sleeves",
-      description: "This is where the magic happens. Our team gets to work implementing your strategy across all the right channels. We keep you updated every step of the way with clear communication and regular check-ins. You're never in the dark about what we're doing or why.",
-      activities: ["Multi-Channel Execution", "Weekly Progress Updates", "Quality Checks", "Ongoing Optimization"],
+      title: "Phased Implementation & Staff Training",
+      description: "We start with your most pressing needs and gradually roll out automation across your campus. Our team works closely with your staff, providing hands-on training and support at every step. We ensure everyone feels confident using the new systems before moving to the next phase.",
+      activities: ["Module-by-Module Rollout", "Staff Training Sessions", "Real-time Support", "Process Documentation"],
       icon: "⚡",
-      humanTouch: "We work alongside you as part of your team"
+      humanTouch: "We train your team until they're comfortable and confident"
     },
     {
       step: "04",
-      title: "Growing and Improving Together",
-      description: "We believe the best results come from continuous improvement. Every couple of weeks, we review what's working, adjust what's not, and find new opportunities. This means your strategy stays fresh and effective as your business and market evolve.",
-      activities: ["Regular Performance Reviews", "Strategy Refinement", "ROI Optimization", "New Opportunity Identification"],
+      title: "Ongoing Optimization & Support",
+      description: "Our partnership continues long after implementation. We monitor system performance, gather feedback from your team, and continuously improve the automation. As your school grows and changes, we adapt the systems to meet your evolving needs.",
+      activities: ["Performance Monitoring", "Regular Feedback Sessions", "System Enhancements", "New Feature Rollouts"],
       icon: "📈",
-      humanTouch: "We learn and adapt as we grow together"
+      humanTouch: "We grow and adapt together as your school evolves"
     }
   ];
 
   const collaborationFeatures = [
     {
-      title: "Your Dedicated Team",
-      description: "You get real people who care about your success. We assign you a dedicated account manager and specialists who learn your business inside out and become true partners in your growth.",
+      title: "Your Dedicated Education Technology Partner",
+      description: "You get a team that understands both technology and education. We become your go-to experts for streamlining operations and enhancing the learning experience through smart automation.",
       icon: "👥",
-      specific: "Real people who know your business"
+      specific: "Education-focused technology experts"
     },
     {
-      title: "No Surprises Communication",
-      description: "We keep you in the loop with regular updates and honest conversations. You'll always know what we're working on, how it's performing, and what's coming next. We're available when you need us.",
+      title: "Transparent Communication & Updates",
+      description: "We keep you informed with regular progress reports and are always available for questions. You'll know exactly what we're working on and how it's benefiting your school operations.",
       icon: "💬",
-      specific: "Regular check-ins and updates"
+      specific: "Regular campus visits and updates"
     },
     {
-      title: "Flexible and Responsive",
-      description: "When opportunities pop up or things change (as they often do in business), we adapt quickly. We're not locked into rigid plans - we pivot based on what's actually working for you.",
-      icon: "🔄",
-      specific: "We adapt to your changing needs"
+      title: "Academic Calendar-Aligned Implementation",
+      description: "We schedule implementations around your academic calendar to minimize disruption. No major changes during exam periods or admission season - we work at your pace.",
+      icon: "📚",
+      specific: "Implementation that respects your academic rhythm"
     },
     {
-      title: "Focused on Your Success",
-      description: "We measure our success by yours. We're deeply committed to helping you hit your targets and grow your business. When you win, we win - it's that simple.",
-      icon: "✅",
-      specific: "Your goals drive everything we do"
+      title: "Measurable Impact on Education Quality",
+      description: "We focus on automation that gives teachers more time for teaching and improves parent satisfaction. Our success is measured in hours saved and educational outcomes enhanced.",
+      icon: "🎯",
+      specific: "Focus on time recovery for teaching staff"
     }
   ];
 
   const realResults = [
-    { metric: "3-5X", description: "Return on investment for our e-commerce partners" },
-    { metric: "47%", description: "More qualified leads for B2B companies we work with" },
-    { metric: "2.3X", description: "Higher conversion rates through our optimization work" },
-    { metric: "98%", description: "Of clients choose to continue working with us" }
+    { metric: "100+", description: "Staff hours saved monthly through automation" },
+    { metric: "24/7", description: "Parent communication without staff overtime" },
+    { metric: "Zero", description: "Manual errors in attendance and fee tracking" },
+    { metric: "98%", description: "Parent satisfaction with automated communication" }
+  ];
+
+  const implementationPhases = [
+    {
+      phase: "Phase 1: Admission Ready (2-3 weeks)",
+      focus: "Handle admission rush and parent inquiries",
+      deliverables: ["AI Inquiry Chatbot", "Digital Form Processing", "Lead Management", "WhatsApp Automation"]
+    },
+    {
+      phase: "Phase 2: Academic Operations (3-4 weeks)",
+      focus: "Core school operations automation",
+      deliverables: ["Attendance System", "Fee Management", "Parent Portal", "Basic Reporting"]
+    },
+    {
+      phase: "Phase 3: Premium Facilities (4-5 weeks)",
+      focus: "Sports and facility management",
+      deliverables: ["Pool Scheduling", "Court Management", "Equipment Tracking", "Tournament Automation"]
+    }
   ];
 
   return (
@@ -78,24 +96,50 @@ const HowWeWork = () => {
         {/* Header */}
         <div className={styles.header}>
           <div className={styles.badge}>
-            <span>How We Work With You</span>
+            <span>Our Education Automation Process</span>
           </div>
           <h2 className={styles.title}>
-            A <span className={styles.highlight}>Partnership</span> That Feels<br />
-            Like <span className={styles.highlight}>Part of Your Team</span>
+            Transforming School Operations<br />
+            <span className={styles.highlight}>Without Disrupting Education</span>
           </h2>
           <p className={styles.subtitle}>
-            We don't just deliver marketing services - we become an extension of your team. 
-            We take the time to understand your business, your challenges, and your vision, 
-            then work alongside you to make it happen.
+            We understand that schools operate on tight academic calendars. Our phased approach 
+            ensures smooth implementation that enhances operations without interrupting the learning environment.
           </p>
+        </div>
+
+        {/* Implementation Phases */}
+        <div className={styles.phasesSection}>
+          <h3>Academic Calendar-Aligned Implementation</h3>
+          <p>We phase automation to match your school's rhythm and priorities</p>
+          <div className={styles.phasesGrid}>
+            {implementationPhases.map((phase, index) => (
+              <div key={index} className={styles.phaseCard}>
+                <div className={styles.phaseHeader}>
+                  <div className={styles.phaseNumber}>0{index + 1}</div>
+                  <h4>{phase.phase}</h4>
+                </div>
+                <div className={styles.phaseFocus}>
+                  <strong>Focus:</strong> {phase.focus}
+                </div>
+                <div className={styles.phaseDeliverables}>
+                  <strong>Delivers:</strong>
+                  <ul>
+                    {phase.deliverables.map((item, itemIndex) => (
+                      <li key={itemIndex}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Process Timeline */}
         <div className={styles.processSection}>
           <div className={styles.processIntro}>
-            <h3>Our Approach: Simple, Transparent, Effective</h3>
-            <p>Four straightforward steps to building your growth engine together</p>
+            <h3>Our Partnership Approach</h3>
+            <p>Four steps to sustainable automation that grows with your school</p>
           </div>
           <div className={styles.processTimeline}>
             {processSteps.map((step, index) => (
@@ -138,8 +182,8 @@ const HowWeWork = () => {
         {/* Real Results */}
         <div className={styles.resultsSection}>
           <div className={styles.resultsHeader}>
-            <h3>Real Results for Real Businesses</h3>
-            <p>Here's what our partnership approach has delivered for businesses like yours</p>
+            <h3>Measurable Impact on School Operations</h3>
+            <p>Here's what our automation partnership delivers for schools</p>
           </div>
           <div className={styles.resultsGrid}>
             {realResults.map((result, index) => (
@@ -154,8 +198,8 @@ const HowWeWork = () => {
         {/* Collaboration Approach */}
         <div className={styles.collaborationSection}>
           <div className={styles.collaborationHeader}>
-            <h3>Working Together Should Feel Easy</h3>
-            <p>That's why we've built our approach around clear communication and real partnership</p>
+            <h3>Built for Education, Designed for Schools</h3>
+            <p>Our approach respects the unique nature of educational institutions</p>
           </div>
           <div className={styles.collaborationGrid}>
             {collaborationFeatures.map((feature, index) => (
@@ -175,15 +219,15 @@ const HowWeWork = () => {
         {/* Final CTA */}
         <div className={styles.ctaSection}>
           <div className={styles.ctaContent}>
-            <h3>Ready to See What We Can Do Together?</h3>
-            <p>Let's have a real conversation about your business and see if we're the right fit to help you grow.</p>
+            <h3>Ready to Transform Your School Operations?</h3>
+            <p>Let's discuss how automation can save your staff hundreds of hours and improve parent satisfaction</p>
             <div className={styles.ctaButtons}>
-              <button className={styles.primaryBtn}>Start the Conversation</button>
-              <button className={styles.secondaryBtn}>See Client Stories</button>
+              <button className={styles.primaryBtn}>Schedule Campus Assessment</button>
+              <button className={styles.secondaryBtn}>See School Case Studies</button>
             </div>
             <div className={styles.ctaNote}>
-              <span className={styles.noteIcon}>🤝</span>
-              <span>No sales pitch • Just honest advice • See if we can help</span>
+              <span className={styles.noteIcon}>📚</span>
+              <span>No disruption to classes • Phased implementation • Staff training included</span>
             </div>
           </div>
         </div>

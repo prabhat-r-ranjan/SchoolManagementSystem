@@ -3,48 +3,48 @@
 import styles from './HomepageHowWeWork.module.css';
 
 const HomepageHowWeWork = () => {
-  const processSteps = [
+  const implementationSteps = [
     {
       step: "01",
-      title: "Deep Business Immersion",
-      description: "We understand your business, customers, and growth bottlenecks",
-      outcome: "Clear understanding of real opportunities",
+      title: "School Process Audit",
+      description: "We analyze your current workflows, pain points, and automation opportunities",
+      outcome: "Custom automation roadmap",
       icon: "🔍"
     },
     {
       step: "02", 
-      title: "Strategic Growth Blueprint",
-      description: "Customized 90-day plan with priorities and success metrics",
-      outcome: "Practical roadmap everyone agrees on",
-      icon: "🗺️"
+      title: "AI System Design",
+      description: "Build custom automation workflows for attendance, fees, and communication",
+      outcome: "Tailored AI solution design",
+      icon: "🤖"
     },
     {
       step: "03",
-      title: "Integrated Execution", 
-      description: "Coordinated execution across all channels for maximum impact",
-      outcome: "Fast, aligned growth implementation",
+      title: "Quick Implementation", 
+      description: "2-4 week setup with minimal disruption to your daily operations",
+      outcome: "Fully operational system",
       icon: "⚡"
     },
     {
       step: "04",
-      title: "Data-Driven Optimization",
-      description: "Continuous performance reviews and strategy refinement",
-      outcome: "Predictable, sustainable growth",
-      icon: "📊"
+      title: "Ongoing Support & Training",
+      description: "Staff training, performance monitoring, and continuous improvements",
+      outcome: "Sustainable automation success",
+      icon: "🛠️"
     }
   ];
 
   const results = [
-    { metric: "3-5X", label: "ROI" },
-    { metric: "47%", label: "More Qualified Leads" },
-    { metric: "98%", label: "Client Retention" }
+    { metric: "100+", label: "Hours Saved Monthly" },
+    { metric: "24/7", label: "Parent Communication" },
+    { metric: "Zero", label: "Manual Errors" }
   ];
 
   const whyItWorks = [
-    { icon: "👥", text: "Dedicated cross-functional team" },
-    { icon: "📊", text: "Transparent reporting" },
-    { icon: "🔄", text: "Agile adjustments" },
-    { icon: "🎯", text: "Performance obsession" }
+    { icon: "🎯", text: "Built specifically for education" },
+    { icon: "⚡", text: "Quick 2-4 week implementation" },
+    { icon: "🛡️", text: "Data security first approach" },
+    { icon: "📊", text: "Real-time performance dashboards" }
   ];
 
   return (
@@ -53,21 +53,21 @@ const HomepageHowWeWork = () => {
         {/* Header */}
         <div className={styles.header}>
           <div className={styles.badge}>
-            <span>Our Approach</span>
+            <span>Implementation Process</span>
           </div>
           <h2 className={styles.title}>
-            A Strategic Growth System<br />
-            <span className={styles.highlight}>Focused on Real Business Outcomes</span>
+            Simple 4-Step Process to<br />
+            <span className={styles.highlight}>AI-Powered School Automation</span>
           </h2>
           <p className={styles.subtitle}>
-            Our proven 4-step framework delivers measurable results, not just activity reports.
+            From assessment to full automation in weeks, not months. Minimal disruption, maximum impact.
           </p>
         </div>
 
-        {/* Process Steps - Simplified */}
+        {/* Implementation Steps - Education Focused */}
         <div className={styles.processSection}>
           <div className={styles.processGrid}>
-            {processSteps.map((step, index) => (
+            {implementationSteps.map((step, index) => (
               <div key={index} className={styles.processCard}>
                 <div className={styles.stepHeader}>
                   <div className={styles.stepIndicator}>
@@ -78,16 +78,29 @@ const HomepageHowWeWork = () => {
                 </div>
                 <p className={styles.stepDescription}>{step.description}</p>
                 <div className={styles.outcome}>
-                  <strong>Outcome:</strong> {step.outcome}
+                  <strong>Delivers:</strong> {step.outcome}
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Why It Works - Visual */}
+        {/* Quick Results - Education Focused */}
+        <div className={styles.resultsSection}>
+          <h3 className={styles.sectionTitle}>Typical Results for Schools</h3>
+          <div className={styles.resultsGrid}>
+            {results.map((result, index) => (
+              <div key={index} className={styles.resultItem}>
+                <div className={styles.resultMetric}>{result.metric}</div>
+                <div className={styles.resultLabel}>{result.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Why It Works - Education Focused */}
         <div className={styles.whySection}>
-          <h3 className={styles.sectionTitle}>Why It Works</h3>
+          <h3 className={styles.sectionTitle}>Why Schools Love Our Approach</h3>
           <div className={styles.whyGrid}>
             {whyItWorks.map((item, index) => (
               <div key={index} className={styles.whyItem}>
@@ -100,11 +113,11 @@ const HomepageHowWeWork = () => {
 
         {/* Single CTA */}
         <div className={styles.ctaSection}>
-          <h3>Ready to Build Your Growth Engine?</h3>
-          <p>Start with a complimentary strategy session</p>
+          <h3>Ready to Transform Your School Operations?</h3>
+          <p>Get a free automation assessment for your institution</p>
           <div className={styles.ctaButtons}>
-            <button className={styles.primaryBtn}>Start Your Strategy Session</button>
-            <a href="/how-we-work" className={styles.linkBtn}>View Detailed Approach →</a>
+            <button className={styles.primaryBtn}>Get Free Assessment</button>
+            <a href="/case-studies" className={styles.linkBtn}>View School Case Studies →</a>
           </div>
         </div>
       </div>
